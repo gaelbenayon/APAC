@@ -1,0 +1,801 @@
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@400;600&family=Tilt+Warp&display=swap');
+
+/*---*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --apac: #F27324;
+    --link: #f27324c5;
+    --nav_link_color: #fff;
+    --nav_link_hover_bc: rgb(255, 69, 0);
+    --nav_logo_hover: #ffffffb1;
+    --APAC_fontfamily: 'Oswald', sans-serif;
+    --titles_fontfamily: 'Tilt Warp', cursive;
+    --subtitles_fontfamily: 'Oswald', sans-serif;
+    --body_fontfamily: 'DM Sans', sans-serif;
+    --novedad_fecha_color: rgb(172, 168, 168);
+    --footer_link_color: #fff;
+}
+
+/*ETIQUETAS GENERAL*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: var(--APAC_fontfamily);
+    font-weight: 600;
+    color: var(--apac);
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+strong {
+    color: var(--apac);
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--body_fontfamily);
+    background-color: rgb(246, 242, 234);
+}
+
+ul, p {
+    margin: 0;
+}
+
+hr {
+    opacity: 0.75;
+}
+
+/*BARRA NAV*/
+
+nav {
+    background-color: var(--apac);
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.nav_logo {
+    padding: 0px 30px;
+}
+
+.nav_logo a {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo a span {
+    font-size: 45px;
+    margin-right: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: var(--nav_link_color);
+}
+
+.nav_logo span:hover {
+    color: var(--nav_logo_hover);
+    transition: .4s;
+    transform: translateY(2px);
+}
+
+.nav_logo a i {
+    font-size: 20px;
+    color: var(--nav_link_color);
+}
+
+.nav_enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.nav_enlaces li {
+    padding: 5px 6px 5px 6px;
+}
+
+.nav_enlaces a {
+    color: var(--nav_link_color);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav_enlaces a:hover {
+    padding: 10px;
+    transition: .4s;
+    background-color: var(--nav_link_hover_bc);
+    border-radius: 10px;
+}
+
+/*---*/
+
+/*PORTADA*/
+
+.banner {
+    width: 70vw;
+    color: var(--apac);
+    font-family: var(--APAC_fontfamily);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.banner img {
+    margin: 0;
+}
+
+/*---*/
+
+/*NOVEDADES*/
+
+.novedad-grid-container {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+#novedad_titulo {
+    margin: auto;
+    background-color: var(--apac);
+    color: #fff;
+    width: 70%;
+    border-radius: 10px;
+    border-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+#novedad_img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#novedad_info p {
+    margin-bottom: 10px;
+    /* font-size: 18px; */
+}
+
+.novedad_fecha {
+    grid-area: fecha;
+    color: var(--novedad_fecha_color);
+    text-align: right;
+    margin-bottom: 15px;
+    width: 100%;
+    display: block;
+}
+
+/* --- */
+
+/*CLASES*/
+
+.titles {
+    color: var(--apac);
+    font-size: 2.3em;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: var(--titles_fontfamily);
+}
+
+.subtitles {
+    font-family: var(--subtitles_fontfamily);
+    font-weight: 400;
+    color: var(--apac);
+    text-align: center;
+    font-size: 1.8em;
+    margin: 20px 0px 20px 0px;
+}
+
+.separador {
+    width: 90vw;
+    border: 2px solid var(--apac);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.separador--short {
+    width: 60vw;
+    border: 2px solid var(--apac);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.separador--short--nomb {
+    width: 60vw;
+    border: 2px solid var(--apac);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.separador--nomargintop {
+    width: 90vw;
+    border: 2px solid var(--apac);
+    border-radius: 10px;
+    margin: auto;
+
+    margin-bottom: 30px;
+}
+
+.active {
+    color: #000 !important;
+}
+
+.nav_menu {
+    color: #fff;
+    display: none;
+    padding-right: 30px;
+}
+
+/*---*/
+
+/*FOOTER - CONTACTO*/
+
+#contacto {
+    width: 100vw;
+}
+
+#contacto .titles {
+    margin-bottom: 25px;
+}
+
+.footer_enlaces {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer_enlaces a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    color: var(--footer_link_color);
+    background-color: var(--apac);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.footer_enlaces i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--apac);
+    color: #fff;
+    font-size: 13px;
+    width: 100vw;
+    height: 25px;
+}            
+
+/*SOBRE NOSOTROS*/
+
+#sobrenosotros {
+    margin-bottom: 30px;
+}
+
+#sobrenosotros_img {
+    height: calc(100vh - 80px);
+    padding-top: 30px;
+    width: 100%;
+    background-image: url("../assets/sobreapac.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-position-x: 50%;
+    background-attachment: fixed;
+}
+
+#sobrenosotros_titulo {
+    margin: auto;
+    background-color: #ffffffd1;
+    width: 70%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#sobrenosotros_img h1 {
+    padding-top: 30px;
+}
+
+#sobrenosotros_info {
+    margin-top: 30px;
+}
+
+#info_texto {
+    border-radius: 15px;
+    padding: 25px;
+}
+
+#sobrenosotros_info p {
+    /* text-align: justify;
+    text-justify: inter-word; */
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    
+}
+
+article .link {
+    font-style: italic;
+    color: var(--link);
+}
+
+article .link:hover {
+    font-weight: bold;
+    border-bottom: 2px solid var(--link);
+}
+
+#sobrenosotros_mapa {
+    width: 90%;
+    display: block;
+    margin: auto;
+    height: 300px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+/*---*/
+
+/*QUIERO ADOPTAR*/
+
+#adopciones {
+    margin: 30px 0px 30px 0px;
+}
+
+/*GALERIA*/
+
+.adopciones-grid-container {
+    margin-bottom: 20px;
+}
+
+/* #carouselExampleCaptions {
+    display: none;
+} */
+
+.adopciones-grid-container img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*---*/
+
+/*INFO*/
+
+#adopcionesInfo {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#adopciones h2 {
+    background-color: var(--apac);
+    color: #fff;
+    font-size: 1.3em;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#adopcionesInfo div {
+    margin: 10px;
+}
+
+#adopcionesInfo h3 {
+    color: var(--apac);
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+#bigger h3 {
+    font-size: 25px;
+}
+
+#adopciones p {
+    font-size: 18px;
+}
+
+#adopciones article p {
+    display: inline;
+}
+
+#adopcionesPaseo {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#adopcionesPaseo ul {
+    width: 100%;
+    margin: auto;
+}
+
+#adopcionesCuidados {
+    width: 90%;
+    margin: auto;
+}
+
+#adopcionesCuidados li {
+    margin-bottom: 15px;
+}
+
+#adopciones i {
+    color: var(--apac);
+    margin-right: 10px;
+}
+/*---*/
+/*ASOCIARSE*/
+#asociarse {
+    margin: 0px 0px 30px 0px;
+}
+
+#asociarse .titles {
+    background-color: #fff;
+    padding: 15px 0px 15px 0px;
+}
+
+.asociarse_img {
+    background-image: url("../assets/asociarse.jpg");
+    /* height: 60vh; */
+    height: calc(100vh - 80px);
+    width: 100% !important;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 40%;
+    /* border-radius: 15px; */
+    background-size: 175%;
+    background-attachment: fixed;
+}
+
+#asociarse article {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+#asociarse p {
+    font-size: 17px;
+}
+
+.asociarse_sumate {
+    color: #fff;
+    background-color: var(--apac);
+    text-align: center;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/*VETERINARIAS*/
+#veterinarias-grid-container {
+    margin: 30px 0px 30px 0px;
+}
+
+#veterinarias-grid-container .separador {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#veterinarias-grid-container .separador--short {
+    margin-top: 0;
+}
+
+#veterinarias-grid-container article {
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+#veterinarias-grid-container a:hover {
+    border: none;
+}
+
+#veterinarias-grid-container a {
+    display: block;
+}
+
+/*---*/
+
+/*VOLUNTARIOS*/
+#voluntarios {
+    margin: 0px 0px 30px 0px;
+}
+
+#voluntarios .titles {
+    padding: 15px 0px 15px 0px;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+}
+
+#voluntarios_img {
+    background-image: url('../assets/voluntarios.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px) !important;
+    background-position-x: 30%;
+    background-position-y: 50%;
+    background-attachment: fixed;
+}
+
+#voluntarios_requisitos {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.anotaciones {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+#voluntarios_requisitos .horarios {
+    text-align: center !important;
+}
+
+
+/*---*/
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 430px) {
+    article p {
+        line-height: 1.5;
+    }
+    nav {
+        height: 100px;
+    }
+    main {
+        padding-top: 100px;
+    }
+    .nav_logo a span {
+        font-size: 2em;
+    }
+    .nav_enlaces {
+        display: none;
+    }
+    /* #novedad_info p {
+        font-size: 16px;
+    } */
+    .footer_enlaces {
+        width: 50vw;
+        font-size: 14px;
+    }
+    .footer_enlaces a {
+        font-size: 14px;
+    }
+    .footer_enlaces i {
+        font-size: 14px;
+    }
+
+    /*SOBRE NOSOTROS*/
+    #sobrenosotros_img {
+        height: calc(100vh - 100px);
+    }
+    #sobrenosotros_info p {
+        font-size: 16px;
+    }
+    #sobrenosotros_mapa {
+        width: 100%;
+    }
+    /*---*/
+
+    /*ASOCIARSE*/
+
+    /*---*/
+
+    /*ADOPCIONES*/
+
+    #adopciones h4 {
+        font-size: 18px;
+    }
+
+    #adopciones p {
+        font-size: 16px;
+    }
+
+    /*VOLUNTARIOS*/
+    #voluntarios_img {
+        background-size: 235%;
+        height: calc(100vh - 100px) !important; 
+    }
+    /*---*/
+  
+}
+
+@media screen and (min-width: 480px) {
+    #adopciones ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #adopcionesPaseo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /*ADOPCIONES*/
+   
+    /*---*/
+    #veterinarias-grid-container article {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        text-align: center;
+        padding: 15px;
+    }
+    #veterinarias-grid-container .grid_indicadores {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /*ADOPCIONES*/
+   
+    /*---*/
+     /*ASOCIARSE*/
+     /* .asociarse_sumate {
+        width: 50%;
+    } */
+    /*---*/
+    #veterinarias-grid-container article {
+        text-align: center;
+        padding: 15px;
+        column-gap: 30px;
+    }
+    /*SOBRE NOSOTROS*/
+    #sobrenosotros_titulo {
+        width: 60%;
+    }
+    /*---*/
+    /*VOLUNTARIOS*/
+
+    /*---*/
+}
+
+@media screen and (min-width: 768px) {
+    .footer_enlaces {
+        width: 40vw;
+    }
+    #novedad_titulo {
+        width: 60%;
+    }
+    
+    /*SOBRE NOSOTROS*/
+    #sobrenosotros_titulo {
+        width: 50%;
+    }
+    .asociarse_sumate {
+        width: 40%;
+    }
+    /*---*/
+    /*VOLUNTARIOS*/
+   
+    /*---*/
+}
+
+@media only screen and (max-width: 768px) {
+    .nav_enlaces {
+        display: none;
+    }
+    .nav_menu {
+        display: block;
+    }
+    .novedad_fecha {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .subtitles {
+        font-size: 1.8em;
+        margin: 30px 0px 30px 0px;
+    }
+    article p {
+        font-size: 20px !important;
+    }
+    .separador--short {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .separador {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    /**/
+    /*NOVEDAD*/
+   
+    #novedad_titulo {
+        width: 50%;
+    }
+    /*---*/
+    /*SOBRE NOSOTROS*/
+    #sobrenosotros_titulo {
+        width: 40%;
+    }
+    /* #sobrenosotros_img {
+        height: 85vh;
+    } */
+    /*ASOCIARSE*/
+    .asociarse_img {
+        /* background-position-y: 50%;
+        background-position-x: 40%; */
+        background-size: 100%;
+        height: calc(100vh - 80px);
+    }
+    .asociarse_sumate {
+        margin-top: 35px;
+        margin-bottom: 10px;
+        width: 35vw;
+    }
+    
+    .footer_enlaces {
+        width: 35vw;
+    }
+    /*VOLUNTARIOS*/
+    #voluntarios_img {
+        background-size: 100%;
+    }
+    /*---*/
+}
