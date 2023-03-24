@@ -389,6 +389,10 @@ article .link:hover {
     display: none;
 }
 
+#carouselExampleCaptions {
+    display: none;
+}
+
 .adopciones-grid-container img {
     width: 100%;
     margin-bottom: 20px;
@@ -671,7 +675,10 @@ article .link:hover {
 
 @media screen and (max-width:600px) {
     /*ADOPCIONES*/
-   
+    #carouselExampleCaptions {
+        display: block;
+    }
+    
     /*---*/
     #veterinarias-grid-container article {
         grid-template-columns: 100%;
