@@ -384,7 +384,9 @@ article .link:hover {
 /*GALERIA*/
 
 .adopciones-grid-container {
-    margin-bottom: 20px;
+    margin: auto;
+    width: 90%;
+    display: none;
 }
 
 .adopciones-grid-container img {
@@ -684,7 +686,9 @@ article .link:hover {
 
 @media screen and (min-width: 600px) {
     /*ADOPCIONES*/
-   
+    .adopciones-grid-container {
+        display: flex;
+    }
     /*---*/
      /*ASOCIARSE*/
      /* .asociarse_sumate {
