@@ -524,6 +524,7 @@ article .link:hover {
     margin: auto;
     margin-top: 15px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 /*VETERINARIAS*/
@@ -665,6 +666,7 @@ article .link:hover {
     /*VOLUNTARIOS*/
     #voluntarios_img {
         background-size: 235%;
+        background-position-y: 0%;
         height: calc(100vh - 100px) !important; 
     }
     /*---*/
@@ -707,9 +709,7 @@ article .link:hover {
     }
     /*---*/
      /*ASOCIARSE*/
-     /* .asociarse_sumate {
-        width: 50%;
-    } */
+
     /*---*/
     #veterinarias-grid-container article {
         text-align: center;
@@ -717,9 +717,7 @@ article .link:hover {
         column-gap: 30px;
     }
     /*SOBRE NOSOTROS*/
-    /* #sobrenosotros_titulo {
-        width: 60%;
-    } */
+   
     /*---*/
     /*VOLUNTARIOS*/
 
@@ -732,9 +730,7 @@ article .link:hover {
     }
     
     /*SOBRE NOSOTROS*/
-    .asociarse_sumate {
-        width: 40%;
-    }
+   
     /*---*/
     /*VOLUNTARIOS*/
    
