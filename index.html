@@ -49,7 +49,27 @@
             <h2 id="novedad_titulo" class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 titles">TAPADITA SOLIDARIA</h2>
             <div class="novedad-grid-container m-3 m-xl-4 row">
                 <article class="col-12 col-md-5 col-lg-4 align-self-center" id="novedad_img">
-                    <img src="assets/novedad/tapadita.jpg" alt="Tapadita solidaria">
+                    <div id="novedad_carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="assets/novedad/tapadita.jpg" alt="Banner 'Tapadita'">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/novedad/tapadita_numeros1.jpg" alt="Números del 1 al 100">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/novedad/tapadita_numeros2.jpg" alt="Números del 101 al 200">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#novedad_carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#novedad_carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
                 </article>
 
                 <article class="col-12 col-md-7 col-lg-8 align-self-center text-center text-md-start" id="novedad_info">
