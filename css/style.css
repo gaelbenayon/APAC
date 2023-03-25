@@ -50,7 +50,6 @@ strong {
 
 body {
     overflow-x: hidden;
-    /* width: 100vw; */
     font-family: var(--body_fontfamily);
     background-color: rgb(246, 242, 234);
 }
@@ -167,10 +166,10 @@ main {
     margin: auto;
     background-color: var(--apac);
     color: #fff;
-    /* width: 70%; */
     border-radius: 10px;
     border-bottom: 50px;
     margin-bottom: 30px;
+    padding: 5px 0px 5px 0px;
 }
 
 #novedad_img img {
@@ -327,7 +326,6 @@ main {
 #sobrenosotros_titulo {
     margin: auto;
     background-color: #ffffffd1;
-    /* width: 70%; */
     border-radius: 10px;
     padding: 15px;
 }
@@ -423,7 +421,6 @@ article .link:hover {
     background-color: var(--apac);
     color: #fff;
     font-size: 1.3em;
-    width: 70%;
     margin: auto;
     margin-top: 30px;
     padding: 10px;
@@ -519,7 +516,6 @@ article .link:hover {
     background-color: var(--apac);
     text-align: center;
     padding: 5px;
-    width: 70%;
     margin: auto;
     margin-top: 15px;
     border-radius: 10px;
@@ -765,17 +761,9 @@ article .link:hover {
     /**/
     /*NOVEDAD*/
    
-    /* #novedad_titulo {
-        width: 50%;
-    } */
     /*---*/
     /*SOBRE NOSOTROS*/
-    /* #sobrenosotros_titulo {
-        width: 40%;
-    } */
-    /* #sobrenosotros_img {
-        height: 85vh;
-    } */
+
     /*ASOCIARSE*/
     .asociarse_img {
         /* background-position-y: 50%;
@@ -786,7 +774,6 @@ article .link:hover {
     .asociarse_sumate {
         margin-top: 35px;
         margin-bottom: 10px;
-        width: 35vw;
     }
     
     .footer_enlaces {
