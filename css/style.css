@@ -50,7 +50,7 @@ strong {
 
 body {
     overflow-x: hidden;
-    width: 100vw;
+    /* width: 100vw; */
     font-family: var(--body_fontfamily);
     background-color: rgb(246, 242, 234);
 }
@@ -494,7 +494,6 @@ article .link:hover {
 
 .asociarse_img {
     background-image: url("../assets/asociarse.jpg");
-    /* height: 60vh; */
     height: calc(100vh - 80px);
     width: 100% !important;
     background-repeat: no-repeat;
@@ -578,6 +577,7 @@ article .link:hover {
     background-size: 150%;
     background-repeat: no-repeat;
     height: calc(100vh - 80px) !important;
+    width: 100%;
     background-position-x: 30%;
     background-position-y: 50%;
     background-attachment: fixed;
