@@ -315,7 +315,8 @@ main {
 #sobrenosotros_img {
     height: calc(100vh - 80px);
     padding-top: 30px;
-    width: 100%;
+    width: 100vw;
+    background-size: cover;
     background-image: url("../assets/sobreapac.jpg");
     background-repeat: no-repeat;
     background-position-y: 70%;
