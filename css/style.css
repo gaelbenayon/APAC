@@ -316,7 +316,6 @@ main {
     height: calc(100vh - 80px);
     padding-top: 30px;
     width: 100vw;
-    background-size: cover;
     background-image: url("../assets/sobreapac.jpg");
     background-repeat: no-repeat;
     background-position-y: 70%;
@@ -764,7 +763,9 @@ article .link:hover {
    
     /*---*/
     /*SOBRE NOSOTROS*/
-
+    #sobrenosotros_img {
+        background-size: cover;
+    }
     /*ASOCIARSE*/
     .asociarse_img {
         /* background-position-y: 50%;
