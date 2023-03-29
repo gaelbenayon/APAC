@@ -498,9 +498,7 @@ article .link:hover {
     width: 100% !important;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position-y: 50%; */
     background-position-x: 40%;
-    /* background-size: 175%; */
     background-attachment: fixed;
     padding-top: 30px;
 }
@@ -652,6 +650,7 @@ article .link:hover {
     /*ASOCIARSE*/
     .asociarse_img {
         height: calc(100vh - 100px);
+        background-attachment: scroll;
     }
     /*---*/
 
@@ -780,9 +779,7 @@ article .link:hover {
         background-size: cover;
     }
     /*ASOCIARSE*/
-    .asociarse_img {
-        background-size: 100% !important;
-    }
+    
     .asociarse_sumate {
         margin-top: 35px;
         margin-bottom: 10px;
