@@ -490,8 +490,11 @@ article .link:hover {
 }
 
 .asociarse_img {
+    /* ELIMINAR DESPUES */
+    background-color: red;
+    /*  */
     background-image: url("../assets/asociarse.jpg");
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: 100% !important;
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -499,7 +502,6 @@ article .link:hover {
     background-size: 175%;
     background-attachment: fixed;
     padding-top: 30px;
-    transform: translate(0px,0px);
 }
 
 #asociarse article {
@@ -649,6 +651,7 @@ article .link:hover {
     /*ASOCIARSE*/
     .asociarse_img {
         background-position-y: 0;
+        height: calc(100vh - 100px);
     }
     /*---*/
 
@@ -771,8 +774,6 @@ article .link:hover {
     }
     /*ASOCIARSE*/
     .asociarse_img {
-        /* background-position-y: 50%;
-        background-position-x: 40%; */
         background-size: 100%;
     }
     .asociarse_sumate {
