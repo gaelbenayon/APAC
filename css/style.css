@@ -491,7 +491,7 @@ article .link:hover {
 
 .asociarse_img {
     background-image: url("../assets/asociarse.jpg");
-    height: calc(100vh - 80px);
+    height: 100vh;
     width: 100% !important;
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -499,6 +499,7 @@ article .link:hover {
     background-size: 175%;
     background-attachment: fixed;
     padding-top: 30px;
+    transform: translate(0px,0px);
 }
 
 #asociarse article {
