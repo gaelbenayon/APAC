@@ -490,16 +490,12 @@ article .link:hover {
 }
 
 .asociarse_img {
-    /* ELIMINAR DESPUES */
-    background-color: red;
-    /*  */
     background-image: url("../assets/asociarse.jpg");
     height: calc(100vh - 80px);
     width: 100% !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 40%;
-    background-attachment: fixed;
     padding-top: 30px;
 }
 
@@ -650,7 +646,6 @@ article .link:hover {
     /*ASOCIARSE*/
     .asociarse_img {
         height: calc(100vh - 100px);
-        background-attachment: scroll;
     }
     /*---*/
 
