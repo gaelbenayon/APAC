@@ -647,7 +647,9 @@ article .link:hover {
     /*---*/
 
     /*ASOCIARSE*/
-
+    .asociarse_img {
+        background-position-y: 0;
+    }
     /*---*/
 
     /*ADOPCIONES*/
@@ -772,7 +774,6 @@ article .link:hover {
         /* background-position-y: 50%;
         background-position-x: 40%; */
         background-size: 100%;
-        height: calc(100vh - 80px);
     }
     .asociarse_sumate {
         margin-top: 35px;
