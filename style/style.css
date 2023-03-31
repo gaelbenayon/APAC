@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  overflow-x: hidden;
+  font-family: "DM Sans", sans-serif;
+  background-color: rgb(246, 242, 234);
+}
+html a {
+  text-decoration: none;
+}
+html ul, html p {
+  margin: 0;
+}
+html li {
+  list-style: none;
+}
+html strong {
+  color: #F27324;
+}
+html hr {
+  opacity: 0.75;
+}
+html header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100px;
+  background-color: #F27324;
+}
+html header nav .nav_logo {
+  padding: 0px 30px;
+}
+html header nav .nav_logo a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+html header nav .nav_logo a span {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+html header nav .nav_logo a span:hover {
+  color: rgba(255, 255, 255, 0.6941176471);
+  transition: 0.4s;
+  transform: translateY(2px);
+}
+html header nav .nav_logo a i {
+  font-size: 20px;
+}
+html header nav .nav_enlaces {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 30px;
+}
+html header nav .nav_enlaces li {
+  padding: 5px 6px 5px 6px;
+}
+html header nav .nav_enlaces a {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+html header nav .nav_enlaces a:hover {
+  transition: 0.4s;
+  padding: 10px;
+  background-color: rgb(255, 69, 0);
+  border-radius: 10px;
+}
+html header nav .nav_menu {
+  color: #fff;
+  display: none;
+  padding-right: 30px;
+}
+html main {
+  padding-top: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */

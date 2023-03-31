@@ -1,0 +1,79 @@
+@import "variables";
+
+html {
+    scroll-behavior: smooth;
+
+    //GENERAL
+    body {
+        overflow-x: hidden;
+        font-family: $general-fontfamily;
+        background-color: $body-bc;
+    }
+    a {text-decoration: none;}
+    ul, p {margin: 0;}
+    li {list-style: none;}
+    strong {color: $principal-color}
+    hr {opacity: 0.75;}
+
+    header {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            z-index: 100;
+            width: 100vw;
+            height: 100px;
+            background-color: $principal-color;
+            .nav_logo {
+                padding: 0px 30px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: $nav_enlaces-color;
+                    span {
+                        font-family: $apac-fontfamily;
+                        font-size: 45px;
+                        font-weight: 600;
+                        margin-right: 12px;
+                        &:hover {
+                            color: $nav_logo-color_hover;
+                            transition: .4s;
+                            transform: translateY(2px);
+                        }
+                    }
+                    i {font-size: 20px;}
+                }
+            }
+            .nav_enlaces {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 0px 30px;
+                li {padding: 5px 6px 5px 6px;}
+                a {
+                    color: $nav_enlaces-color;
+                    font-family: $nav_enlaces-fontfamily;
+                    font-weight: 400;
+                    font-size: 18px;
+                    &:hover {
+                        transition: .4s;
+                        padding: 10px;
+                        background-color: $nav_enlaces-bc_hover;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .nav_menu {
+                color: #fff;
+                display: none;
+                padding-right: 30px;
+            }
+        }
+    }
+
+    main {
+        padding-top: 80px;
+
+    }
+}
