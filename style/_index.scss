@@ -1,0 +1,16 @@
+main {
+    .novedad-grid-container {
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+    //titulo va acá
+    #novedad_img img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    #novedad_info p {
+        margin-bottom: 10px;
+        .novedad_fecha {color: $novedad_fecha-color;}
+    }
+}

@@ -1,8 +1,13 @@
 @import "variables";
+@import "index";
+@import "sobreapac";
+@import "asociarse";
+@import "adopciones";
+@import "voluntarios";
+@import "responsive";
 
 html {
     scroll-behavior: smooth;
-
     //GENERAL
     body {
         overflow-x: hidden;
@@ -14,6 +19,85 @@ html {
     li {list-style: none;}
     strong {color: $principal-color}
     hr {opacity: 0.75;}
+    //FIN GENERAL
+    //CLASES
+    .link {
+        font-style: italic;
+        color: $enlaces-color;
+        &:hover {
+            font-weight: bold;
+            border-bottom: 2px solid $principal-color; 
+        }
+    }
+    .titles {
+        color: $principal-color;
+        font-size: 2.1em;
+        text-align: center;
+        margin-bottom: 40px;
+        font-family: $titles-fontfamily;
+    }
+    .subtitles {
+        color: $principal-color;
+        font-family: $subtitles-fontfamily;
+        font-size: 1.8em;
+        font-weight: 400;
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+    }
+    .separador {
+        width: 90vw;
+        border: 2px solid $principal-color;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .separador--short {
+        width: 60vw;
+        border: 2px solid $principal-color;
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .separador--short--nomb {
+        width: 60vw;
+        border: 2px solid $principal-color;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .separador--short--nomt {
+        width: 60vw;
+        border: 2px solid $principal-color;
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .back_img {
+        height: calc(100vh - 80px);
+        width: 100% !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 30px;
+    }
+    .sumate {
+        color: #fff;
+        background-color: $principal-color;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .anotaciones {
+        color: $anotaciones-color;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    //FIN CLASES
 
     header {
         nav {
@@ -23,7 +107,7 @@ html {
             position: fixed;
             z-index: 100;
             width: 100vw;
-            height: 100px;
+            height: 80px;
             background-color: $principal-color;
             .nav_logo {
                 padding: 0px 30px;
@@ -74,6 +158,43 @@ html {
 
     main {
         padding-top: 80px;
+    }
 
+    footer {
+        width: 100vw;
+        .titles {margin-bottom: 25px;}
+        .footer_enlaces {
+            flex-direction: column;
+            width: 50vw;
+            margin: auto;
+            margin-bottom: 30px;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 10px 0px 10px 0px;
+                font-size: 18px;
+                color: $footer_enlaces-color;
+                background-color: $principal-color;
+                border-radius: 15px;
+                margin-bottom: 15px;
+                display: flex;
+            }
+            i {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        }
+        .copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $principal-color;
+            color: $footer_copyright-color;
+            font-size: 13px;
+            width: 100vw;
+            height: 25px;
+        }
     }
 }

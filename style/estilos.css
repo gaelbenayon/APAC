@@ -179,7 +179,6 @@ main {
 
 #novedad_info p {
     margin-bottom: 10px;
-    /* font-size: 18px; */
 }
 
 .novedad_fecha {
@@ -238,17 +237,12 @@ main {
     margin-top: 20px;
 }
 
-.separador--nomargintop {
+.separador--nomt {
     width: 90vw;
     border: 2px solid var(--apac);
     border-radius: 10px;
     margin: auto;
-
     margin-bottom: 30px;
-}
-
-.active {
-    color: #000 !important;
 }
 
 .nav_menu {
@@ -334,12 +328,9 @@ main {
 }
 
 #sobrenosotros_info p {
-    /* text-align: justify;
-    text-justify: inter-word; */
     margin: auto;
     margin-bottom: 15px;
     font-size: 20px;
-    
 }
 
 article .link {

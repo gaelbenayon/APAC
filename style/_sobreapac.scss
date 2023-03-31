@@ -1,0 +1,32 @@
+main {
+    #sobrenosotros {
+        margin-bottom: 30px;
+        #sobrenosotros_img {
+            background-image: url("../assets/sobreapac.jpg");
+            background-position-x: 40%;
+        }
+        //titulo va acá
+        #sobrenosotros_info {
+            margin-top: 30px;
+            #info_texto {
+                border-radius: 15px;
+                padding: 25px;
+            }
+            p {
+                margin: auto;
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+            #info_mapa {
+                width: 90%;
+                display: block;
+                margin: auto;
+                height: 300px;
+                border: none;
+                border-radius: 30px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}

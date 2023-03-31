@@ -1,0 +1,57 @@
+main {
+    #adopciones {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        #adopciones_galeria--btgrid {
+          display: none;
+          img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 15px;
+          }
+        }
+        #adopciones_carousel {
+            display: none;
+            margin: 20px 0px 20px 0px !important;
+            img {width: 100%;}
+            h5 {text-transform: uppercase;}
+        }
+        h2 {
+            background-color: $principal-color;
+            color: #fff;
+            font-size: 1.3em;
+            margin: auto;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        i {
+            color: $principal-color;
+            margin-right: 10px;
+        }
+        #adopcionesInfo {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            div {
+                margin: 10px;
+                h3 {
+                    color: $principal-color;
+                    font-weight: bold;
+                    font-size: 20px;
+                    padding-bottom: 5px;
+                }
+                .bigger {font-size: 25px;}
+            }
+        }
+        #adopcionesPaseo, #adopcionesCuidados {
+            p {display: inline;}
+        }
+        #adopcionesPaseo {margin-top: 10px;}
+        #adopcionesCuidados {
+            li {margin-bottom: 15px;}
+        }
+    }
+}
