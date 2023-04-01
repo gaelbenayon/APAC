@@ -4,6 +4,7 @@
 @import "asociarse";
 @import "adopciones";
 @import "voluntarios";
+@import "veterinarias";
 @import "responsive";
 
 html {
@@ -16,6 +17,9 @@ html {
     }
     a {text-decoration: none;}
     ul, p {margin: 0;}
+    ul {
+        padding-left: 0;
+    }
     li {list-style: none;}
     strong {color: $principal-color}
     hr {opacity: 0.75;}
@@ -29,13 +33,25 @@ html {
             border-bottom: 2px solid $principal-color; 
         }
     }
-    .titles {
+    @mixin headings ($font-family,$font-size,$mt,$mb) {
+        font-family: $font-family;
+        font-size: $font-size;  
+        margin-top: $mt;
+        margin-bottom: $mb;
         color: $principal-color;
-        font-size: 2.1em;
         text-align: center;
-        margin-bottom: 40px;
-        font-family: $titles-fontfamily;
+        width: 100%;
     }
+    .titles {
+        @include headings ($titles-fontfamily,2.1em,0,40px);
+    }
+    // .titles {
+    //     
+    //     font-size: 2.1em;
+    //     text-align: center;
+    //     margin-bottom: 40px;
+    //     font-family: $titles-fontfamily;
+    // }
     .subtitles {
         color: $principal-color;
         font-family: $subtitles-fontfamily;
@@ -49,30 +65,24 @@ html {
         border: 2px solid $principal-color;
         border-radius: 10px;
         margin: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .separador--short {
+        @extend .separador;
         width: 60vw;
-        border: 2px solid $principal-color;
-        border-radius: 10px;
-        margin: auto;
-        margin-bottom: 30px;
-        margin-top: 30px;
+    }
+    .separador--short--nomargin {
+        @extend .separador--short;
+        margin: 0
     }
     .separador--short--nomb {
-        width: 60vw;
-        border: 2px solid $principal-color;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 20px;
+        @extend .separador--short;
+        margin-bottom: 0;
     }
     .separador--short--nomt {
-        width: 60vw;
-        border: 2px solid $principal-color;
-        border-radius: 10px;
-        margin: auto;
-        margin-bottom: 20px;
+        @extend .separador--short;
+        margin-top: 0;
     }
     .back_img {
         height: calc(100vh - 80px);

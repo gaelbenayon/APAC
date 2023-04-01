@@ -132,6 +132,25 @@ main #voluntarios article {
   text-align: center;
 }
 
+main #veterinarias {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #veterinarias-grid-container article {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+main #veterinarias-grid-container a {
+  display: block;
+}
+main #veterinarias-grid-container a:hover {
+  border: none;
+}
+
 @media only screen and (max-width: 430px) {
   header #header_nav {
     height: 100px;
@@ -172,10 +191,24 @@ main #voluntarios article {
   main #voluntarios #voluntarios_img {
     background-position-y: 50%;
   }
+  main #veterinarias #veterinarias-grid-container article {
+    text-align: center;
+    padding: 15px;
+    column-gap: 30px;
+  }
 }
 @media only screen and (max-width: 600px) {
   main #adopciones #adopciones_carousel {
     display: block;
+  }
+  main #veterinarias #veterinarias-grid-container article {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    text-align: center;
+    padding: 15px;
+  }
+  main #veterinarias #veterinarias-grid-container .grid_indicadores {
+    display: none;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -230,6 +263,9 @@ html a {
 html ul, html p {
   margin: 0;
 }
+html ul {
+  padding-left: 0;
+}
 html li {
   list-style: none;
 }
@@ -248,11 +284,13 @@ html .link:hover {
   border-bottom: 2px solid #F27324;
 }
 html .titles {
-  color: #F27324;
-  font-size: 2.1em;
-  text-align: center;
-  margin-bottom: 40px;
   font-family: "Tilt Warp", cursive;
+  font-size: 2.1em;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #F27324;
+  text-align: center;
+  width: 100%;
 }
 html .subtitles {
   color: #F27324;
@@ -262,35 +300,25 @@ html .subtitles {
   text-align: center;
   margin: 20px 0px 20px 0px;
 }
-html .separador {
+html .separador, html .separador--short, html .separador--short--nomt, html .separador--short--nomb, html .separador--short--nomargin {
   width: 90vw;
   border: 2px solid #F27324;
   border-radius: 10px;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-html .separador--short {
+html .separador--short, html .separador--short--nomt, html .separador--short--nomb, html .separador--short--nomargin {
   width: 60vw;
-  border: 2px solid #F27324;
-  border-radius: 10px;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+}
+html .separador--short--nomargin {
+  margin: 0;
 }
 html .separador--short--nomb {
-  width: 60vw;
-  border: 2px solid #F27324;
-  border-radius: 10px;
-  margin: auto;
-  margin-top: 20px;
+  margin-bottom: 0;
 }
 html .separador--short--nomt {
-  width: 60vw;
-  border: 2px solid #F27324;
-  border-radius: 10px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin-top: 0;
 }
 html .back_img {
   height: calc(100vh - 80px);
