@@ -34,9 +34,6 @@ html {
         }
     }
     @mixin headings ($font-family,$font-size,$mt,$mb) {
-        background-color: #ffffffd1;
-        border-radius: 10px;
-        padding: 15px;
         font-family: $font-family;
         font-size: $font-size;  
         margin: auto;
@@ -47,8 +44,10 @@ html {
     }
     .titles {
         @include headings ($titles-fontfamily,2.1em,0,40px);
+        background-color: #ffffffd1;
+        border-radius: 15px;
+        padding: 15px;
     }
-    
     .subtitles {
         @include headings ($subtitles-fontfamily,1.8em,20px,20px);
         font-weight: 400;
@@ -178,22 +177,19 @@ html {
         width: 100vw;
         .titles {margin-bottom: 25px;}
         .footer_enlaces {
-            flex-direction: column;
-            width: 50vw;
+            // flex-direction: column;
             margin: auto;
             margin-bottom: 30px;
             a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
                 padding: 10px 0px 10px 0px;
                 font-size: 18px;
                 color: $footer_enlaces-color;
                 background-color: $principal-color;
                 border-radius: 15px;
                 margin-bottom: 15px;
-                display: flex;
             }
             i {
                 margin-right: 10px;

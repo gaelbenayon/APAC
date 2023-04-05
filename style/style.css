@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@400;600&family=Tilt+Warp&display=swap");
 main .novedad-grid-container {
   padding: 20px;
   border-radius: 20px;
@@ -284,9 +285,6 @@ html .link:hover {
   border-bottom: 2px solid #F27324;
 }
 html .titles {
-  background-color: rgba(255, 255, 255, 0.8196078431);
-  border-radius: 10px;
-  padding: 15px;
   font-family: "Tilt Warp", cursive;
   font-size: 2.1em;
   margin: auto;
@@ -294,11 +292,11 @@ html .titles {
   margin-bottom: 40px;
   color: #F27324;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.8196078431);
+  border-radius: 15px;
+  padding: 15px;
 }
 html .subtitles {
-  background-color: rgba(255, 255, 255, 0.8196078431);
-  border-radius: 10px;
-  padding: 15px;
   font-family: "Oswald", sans-serif;
   font-size: 1.8em;
   margin: auto;
@@ -430,8 +428,6 @@ html footer .titles {
   margin-bottom: 25px;
 }
 html footer .footer_enlaces {
-  flex-direction: column;
-  width: 50vw;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -439,14 +435,12 @@ html footer .footer_enlaces a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 10px 0px 10px 0px;
   font-size: 18px;
   color: #fff;
   background-color: #F27324;
   border-radius: 15px;
   margin-bottom: 15px;
-  display: flex;
 }
 html footer .footer_enlaces i {
   margin-right: 10px;
