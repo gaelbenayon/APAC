@@ -34,31 +34,24 @@ html {
         }
     }
     @mixin headings ($font-family,$font-size,$mt,$mb) {
+        background-color: #ffffffd1;
+        border-radius: 10px;
+        padding: 15px;
         font-family: $font-family;
         font-size: $font-size;  
+        margin: auto;
         margin-top: $mt;
         margin-bottom: $mb;
         color: $principal-color;
         text-align: center;
-        width: 100%;
     }
     .titles {
         @include headings ($titles-fontfamily,2.1em,0,40px);
     }
-    // .titles {
-    //     
-    //     font-size: 2.1em;
-    //     text-align: center;
-    //     margin-bottom: 40px;
-    //     font-family: $titles-fontfamily;
-    // }
+    
     .subtitles {
-        color: $principal-color;
-        font-family: $subtitles-fontfamily;
-        font-size: 1.8em;
+        @include headings ($subtitles-fontfamily,1.8em,20px,20px);
         font-weight: 400;
-        text-align: center;
-        margin: 20px 0px 20px 0px;
     }
     .separador {
         width: 90vw;
@@ -168,6 +161,17 @@ html {
 
     main {
         padding-top: 80px;
+        .banner {
+            width: 70%;
+            font-family: $apac-fontfamily;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: $principal-color;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 
     footer {

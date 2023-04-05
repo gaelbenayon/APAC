@@ -1,26 +1,28 @@
 @media only screen and (max-width: 430px) {
-    header {
-        #header_nav {
-            height: 100px;
-            .nav_enlaces {
-                display: none;
+    html {
+        header {
+            #header_nav {
+                height: 100px;
+                .nav_enlaces {
+                    display: none;
+                }
             }
         }
-    }
-
-    main {
-        padding-top: 100px;
-        //GENERAL
-        article p {
-            line-height: 1.5;
-        }
-        //FIN GENERAL
-        //CLASES
-        .back_img {height: calc(100vh - 100px);}
-        //FIN CLASES
-        #sobrenosotros {
-            #sobrenosotros_info {
-                #info_mapa {width: 100%;}
+    
+        main {
+            padding-top: 100px !important;
+            //GENERAL
+            article p {
+                line-height: 1.5;
+            }
+            //FIN GENERAL
+            //CLASES
+            .back_img {height: calc(100vh - 100px);}
+            //FIN CLASES
+            #sobrenosotros {
+                #sobrenosotros_info {
+                    #info_mapa {width: 100%;}
+                }
             }
         }
     }

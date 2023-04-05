@@ -152,22 +152,22 @@ main #veterinarias-grid-container a:hover {
 }
 
 @media only screen and (max-width: 430px) {
-  header #header_nav {
+  html header #header_nav {
     height: 100px;
   }
-  header #header_nav .nav_enlaces {
+  html header #header_nav .nav_enlaces {
     display: none;
   }
-  main {
-    padding-top: 100px;
+  html main {
+    padding-top: 100px !important;
   }
-  main article p {
+  html main article p {
     line-height: 1.5;
   }
-  main .back_img {
+  html main .back_img {
     height: calc(100vh - 100px);
   }
-  main #sobrenosotros #sobrenosotros_info #info_mapa {
+  html main #sobrenosotros #sobrenosotros_info #info_mapa {
     width: 100%;
   }
 }
@@ -284,21 +284,29 @@ html .link:hover {
   border-bottom: 2px solid #F27324;
 }
 html .titles {
+  background-color: rgba(255, 255, 255, 0.8196078431);
+  border-radius: 10px;
+  padding: 15px;
   font-family: "Tilt Warp", cursive;
   font-size: 2.1em;
+  margin: auto;
   margin-top: 0;
   margin-bottom: 40px;
   color: #F27324;
   text-align: center;
-  width: 100%;
 }
 html .subtitles {
-  color: #F27324;
+  background-color: rgba(255, 255, 255, 0.8196078431);
+  border-radius: 10px;
+  padding: 15px;
   font-family: "Oswald", sans-serif;
   font-size: 1.8em;
-  font-weight: 400;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #F27324;
   text-align: center;
-  margin: 20px 0px 20px 0px;
+  font-weight: 400;
 }
 html .separador, html .separador--short, html .separador--short--nomt, html .separador--short--nomb, html .separador--short--nomargin {
   width: 90vw;
@@ -403,6 +411,17 @@ html header nav .nav_menu {
 }
 html main {
   padding-top: 80px;
+}
+html main .banner {
+  width: 70%;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #F27324;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 html footer {
   width: 100vw;
