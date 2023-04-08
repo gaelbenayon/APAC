@@ -316,12 +316,6 @@ html header nav #nav_menu {
   display: none;
   padding-right: 30px;
 }
-html header .menu {
-  height: 100vh;
-}
-html header .menu .nav_enlaces {
-  display: flex !important;
-}
 html main {
   padding-top: 80px;
 }
