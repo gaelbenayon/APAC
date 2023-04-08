@@ -5,7 +5,7 @@
 @import "adopciones";
 @import "voluntarios";
 @import "veterinarias";
-@import "responsive";
+//RESPONSIVE IS AT THE BOTTOM
 
 html {
     scroll-behavior: smooth;
@@ -32,6 +32,17 @@ html {
             font-weight: bold;
             border-bottom: 2px solid $principal-color; 
         }
+    }
+    .banner {
+        width: 70%;
+        font-family: $apac-fontfamily;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $principal-color;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     @mixin headings ($font-family,$font-size,$mt,$mb) {
         font-family: $font-family;
@@ -150,26 +161,24 @@ html {
                     }
                 }
             }
-            .nav_menu {
+            #nav_menu {
                 color: #fff;
                 display: none;
                 padding-right: 30px;
+            }
+        }
+        .menu {
+            height: 100vh;
+            .nav_enlaces {
+                display: flex !important;
             }
         }
     }
 
     main {
         padding-top: 80px;
-        .banner {
-            width: 70%;
-            font-family: $apac-fontfamily;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            color: $principal-color;
-            text-align: center;
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
+        article p {
+            font-size: 16px;
         }
     }
 
@@ -185,7 +194,7 @@ html {
                 justify-content: center;
                 align-items: center;
                 padding: 10px 0px 10px 0px;
-                font-size: 18px;
+                font-size: 16px;
                 color: $footer_enlaces-color;
                 background-color: $principal-color;
                 border-radius: 15px;
@@ -193,7 +202,7 @@ html {
             }
             i {
                 margin-right: 10px;
-                font-size: 20px;
+                font-size: 18px;
             }
         }
         .copyright {
@@ -208,3 +217,5 @@ html {
         }
     }
 }
+
+@import "responsive";

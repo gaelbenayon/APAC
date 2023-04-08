@@ -1,16 +1,15 @@
 @media only screen and (max-width: 430px) {
     html {
         header {
-            #header_nav {
+            nav {
                 height: 100px;
                 .nav_enlaces {
                     display: none;
                 }
             }
         }
-    
         main {
-            padding-top: 100px !important;
+            padding-top: 100px;
             //GENERAL
             article p {
                 line-height: 1.5;
@@ -18,10 +17,21 @@
             //FIN GENERAL
             //CLASES
             .back_img {height: calc(100vh - 100px);}
+            .banner {font-size: 20px;}
             //FIN CLASES
             #sobrenosotros {
                 #sobrenosotros_info {
                     #info_mapa {width: 100%;}
+                }
+            }
+        }
+        footer {
+            .footer_enlaces {
+                a {
+                    font-size: 14px;
+                }
+                i {
+                    font-size: 16px;
                 }
             }
         }
@@ -85,38 +95,51 @@
 }
 
 @media only screen and (min-width: 768px) {
-    main {
-        #sobrenosotros {
-            #sobrenosotros_img {background-position-y: 60%;}
-        }
-        #asociarse {
-            #asociarse_img {background-position-y: 60%;}
-        }
-        #voluntarios {
-            #voluntarios_img {background-position-y: 60%;}
+    html {
+        main {
+            #sobrenosotros {
+                #sobrenosotros_img {background-position-y: 60%;}
+            }
+            #asociarse {
+                #asociarse_img {background-position-y: 60%;}
+            }
+            #voluntarios {
+                #voluntarios_img {background-position-y: 60%;}
+            }
         }
     }
 }
 
 @media only screen and (max-width:768px) {
-    header {
-        #header_nav {
-            .nav_enlaces {display: none;}
-            .nav_menu {display: block;}
+    html {
+        header {
+            #header_nav {
+                .nav_enlaces {display: none;}
+                #nav_menu {display: block;}
+            }
         }
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    //CLASES
-
-    //FIN CLASES
-    main {
-        #sobrenosotros {
-            #sobrenosotros_img {background-position-y: 75%;}
+    html {
+        main {
+            #sobrenosotros {
+                #sobrenosotros_img {background-position-y: 75%;}
+            }
+            #voluntarios {
+                #voluntarios_img {background-position-y: 70%;}
+            }
         }
-        #voluntarios {
-            #voluntarios_img {background-position-y: 70%;}
+        footer {
+            .footer_enlaces {
+                a {
+                    font-size: 18px;
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }

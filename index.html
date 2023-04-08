@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <nav id="header_nav">
+        <nav class="menu" id="header_nav">
             <div class="nav_logo">
                 <a href="#">
                     <span>A.P.A.C.</span>
@@ -33,7 +33,14 @@
                     <li><a href="html/veterinarias.html">VETERINARIAS</a></li>
                     <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
-                <span class="nav_menu"><i class="fa-solid fa-bars"></i></span>
+                <span onclick="menu()" id="nav_menu"><i class="fa-solid fa-bars"></i></span>
+                <script>
+                    function menu() {
+                        nav = document.getElementById('header_nav');
+                        nav.classList.toggle('menu')
+                        
+                    }
+                </script>
             </div>
         </nav>
     </header>
@@ -102,7 +109,7 @@
     <footer id="contacto">
         <hr class="separador">
         <h2 class="subtitles">CONTACTO</h2>
-        <div class="footer_enlaces col-6 col-sm-5 col-md-4 col-lg-3 justify-items-center">
+        <div class="footer_enlaces col-6 col-sm-5 col-md-4 col-lg-3">
             <a class="" href="tel:03489426756"><i class="fa-solid fa-phone"></i>(03489) 426756</a>
             <a href="https://instagram.com/apacampana" target="_blank"><i class="fa-brands fa-instagram"></i>@apacampana</a>
             <a href="https://facebook.com/campana.apac" target="_blank"><i class="fa-brands fa-facebook"></i>APAC CAMPANA</a>
