@@ -115,13 +115,17 @@ html {
     header {
         nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             position: fixed;
             z-index: 100;
             width: 100vw;
             height: 80px;
             background-color: $principal-color;
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100vw;
+            }
             .nav_logo {
                 padding: 0px 30px;
                 a {
@@ -166,7 +170,34 @@ html {
                 display: none;
                 padding-right: 30px;
             }
+            .menu_enlaces {display: none;}
         }
+        .menuShow {
+            transition: .5s;
+            height: 100vh;
+            flex-direction: column;
+            padding-top: 30px;
+            .menu_enlaces {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                li {padding: 15px}
+                a {
+                    color: $nav_enlaces-color;
+                    font-family: $nav_enlaces-fontfamily;
+                    font-weight: 400;
+                    font-size: 26px;
+                    &:hover {
+                        transition: .4s;
+                        padding: 10px;
+                        background-color: $nav_enlaces-bc_hover;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }  
     }
 
     main {
