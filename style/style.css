@@ -58,20 +58,19 @@ main #adopciones {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+main #adopciones img {
+  width: 100%;
+  border-radius: 15px;
+}
 main #adopciones #adopciones_galeria--btgrid {
   display: none;
 }
 main #adopciones #adopciones_galeria--btgrid img {
-  width: 100%;
   margin-bottom: 20px;
-  border-radius: 15px;
 }
 main #adopciones #adopciones_carousel {
   display: none;
   margin: 20px 0px 20px 0px !important;
-}
-main #adopciones #adopciones_carousel img {
-  width: 100%;
 }
 main #adopciones #adopciones_carousel h5 {
   text-transform: uppercase;
