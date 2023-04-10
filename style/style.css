@@ -64,9 +64,14 @@ main #adopciones img {
 }
 main #adopciones #adopciones_galeria--btgrid {
   display: none;
+  margin: auto;
+  overflow-x: scroll;
 }
 main #adopciones #adopciones_galeria--btgrid img {
-  margin-bottom: 20px;
+  padding: 10px;
+  height: 300px;
+  width: 300px;
+  z-index: 10000;
 }
 main #adopciones #adopciones_carousel {
   display: none;

@@ -10,7 +10,17 @@ main {
         }
         #adopciones_galeria--btgrid {
           display: none;
-          img {margin-bottom: 20px;}
+          //SE ACTIVA A LOS 600px
+          margin: auto;
+          overflow-x: scroll;
+        //   background-color: red;
+          img {
+            // margin-bottom: 20px;
+            padding: 10px;
+            height: 300px;
+            width: 300px;
+            z-index: 10000;
+        }
         }
         #adopciones_carousel {
             display: none;
