@@ -58,26 +58,41 @@ main #adopciones {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+main #adopciones .anotaciones {
+  display: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+main #adopciones #adopciones_galeria--row {
+  display: none;
+  overflow-x: scroll;
+}
+main #adopciones #adopciones_galeria--row img {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+}
+main #adopciones #adopciones_galeria--row .image-container {
+  position: relative;
+}
+main #adopciones #adopciones_galeria--row .image-container .galeria_nombres {
+  text-transform: uppercase;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  color: #fff;
+  line-height: 1.2;
+}
 main #adopciones img {
   width: 100%;
   border-radius: 15px;
 }
-main #adopciones #adopciones_galeria--btgrid {
-  display: none;
-  margin: auto;
-  overflow-x: scroll;
-}
-main #adopciones #adopciones_galeria--btgrid img {
-  padding: 10px;
-  height: 300px;
-  width: 300px;
-  z-index: 10000;
-}
-main #adopciones #adopciones_carousel {
+main #adopciones #adopciones_galeria--carousel {
   display: none;
   margin: 20px 0px 20px 0px !important;
 }
-main #adopciones #adopciones_carousel h5 {
+main #adopciones #adopciones_galeria--carousel h5 {
   text-transform: uppercase;
 }
 main #adopciones h2 {
@@ -437,8 +452,11 @@ html footer .copyright {
   }
 }
 @media only screen and (min-width: 600px) {
-  main #adopciones #adopciones_galeria--btgrid {
+  main #adopciones #adopciones_galeria--row {
     display: flex;
+  }
+  main #adopciones .anotaciones {
+    display: block;
   }
   main #asociarse #asociarse_img {
     background-position-y: 40%;
@@ -453,7 +471,7 @@ html footer .copyright {
   }
 }
 @media only screen and (max-width: 600px) {
-  main #adopciones #adopciones_carousel {
+  main #adopciones #adopciones_galeria--carousel {
     display: block;
   }
   main #veterinarias #veterinarias-grid-container article {
@@ -488,6 +506,10 @@ html footer .copyright {
 @media only screen and (min-width: 1200px) {
   html main #sobrenosotros #sobrenosotros_img {
     background-position-y: 75%;
+  }
+  html main #adopciones #adopciones_galeria--row img {
+    width: 350px;
+    height: 350px;
   }
   html main #voluntarios #voluntarios_img {
     background-position-y: 70%;

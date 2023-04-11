@@ -54,7 +54,8 @@
 @media only screen and (min-width: 600px) {
     main {
         #adopciones {
-            #adopciones_galeria--btgrid {display: flex;}
+            #adopciones_galeria--row {display: flex;}
+            .anotaciones {display: block;}
         }
         #asociarse {
             #asociarse_img {background-position-y: 40%;}
@@ -78,7 +79,7 @@
 @media only screen and (max-width: 600px) {
     main {
         #adopciones {
-            #adopciones_carousel {display: block;}
+            #adopciones_galeria--carousel {display: block;}
         }
         #veterinarias {
             #veterinarias-grid-container {
@@ -126,6 +127,14 @@
         main {
             #sobrenosotros {
                 #sobrenosotros_img {background-position-y: 75%;}
+            }
+            #adopciones {
+                #adopciones_galeria--row {
+                    img {
+                        width: 350px;
+                        height: 350px;
+                    }
+                }
             }
             #voluntarios {
                 #voluntarios_img {background-position-y: 70%;}
