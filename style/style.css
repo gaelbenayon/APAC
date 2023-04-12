@@ -69,18 +69,19 @@ main #adopciones #adopciones_galeria--row {
   overflow-x: scroll;
 }
 main #adopciones #adopciones_galeria--row img {
-  width: 300px;
+  width: 350px;
   height: 300px;
-  margin-right: 20px;
 }
 main #adopciones #adopciones_galeria--row .image-container {
   position: relative;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
 }
 main #adopciones #adopciones_galeria--row .image-container .galeria_nombres {
   text-transform: uppercase;
   position: absolute;
   top: 80%;
-  left: 40%;
   color: #fff;
   line-height: 1.2;
 }
@@ -508,8 +509,8 @@ html footer .copyright {
     background-position-y: 75%;
   }
   html main #adopciones #adopciones_galeria--row img {
-    width: 350px;
-    height: 350px;
+    width: 365px;
+    height: 365px;
   }
   html main #voluntarios #voluntarios_img {
     background-position-y: 70%;
