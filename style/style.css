@@ -287,17 +287,19 @@ html header nav .nav_logo a {
   display: flex;
   align-items: center;
   color: #fff;
+  transition-property: color, transform;
+  transition: all 0.5s ease-out;
+}
+html header nav .nav_logo a:hover {
+  color: rgba(255, 255, 255, 0.6941176471);
+  transition: 0.4s;
+  transform: translateY(1px);
 }
 html header nav .nav_logo a span {
   font-family: "Oswald", sans-serif;
   font-size: 45px;
   font-weight: 600;
   margin-right: 12px;
-}
-html header nav .nav_logo a span:hover {
-  color: rgba(255, 255, 255, 0.6941176471);
-  transition: 0.4s;
-  transform: translateY(2px);
 }
 html header nav .nav_logo a i {
   font-size: 20px;
@@ -316,9 +318,10 @@ html header nav .nav_enlaces a {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  transition-property: padding, background-color, border-radius;
+  transition: all 0.4s ease-out;
 }
 html header nav .nav_enlaces a:hover {
-  transition: 0.4s;
   padding: 10px;
   background-color: rgb(255, 69, 0);
   border-radius: 10px;
