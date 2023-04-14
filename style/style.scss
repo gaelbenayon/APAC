@@ -132,16 +132,18 @@ html {
                     display: flex;
                     align-items: center;
                     color: map-get($colores,nav_enlaces);
+                    transition-property: color,transform;
+                    transition: all .5s ease-out;
+                    &:hover {
+                        color: map-get($colores,nav_logo_hover);
+                        transition: .4s;
+                        transform: translateY(1px);
+                    }
                     span {
                         font-family: map-get($fonts,apac);
                         font-size: 45px;
                         font-weight: 600;
                         margin-right: 12px;
-                        &:hover {
-                            color: map-get($colores,nav_logo_hover);
-                            transition: .4s;
-                            transform: translateY(2px);
-                        }
                     }
                     i {font-size: 20px;}
                 }
@@ -157,8 +159,9 @@ html {
                     font-family: map-get($fonts,nav_enlaces);
                     font-weight: 400;
                     font-size: 18px;
+                    transition-property: padding,background-color,border-radius;
+                    transition: all .4s ease-out;
                     &:hover {
-                        transition: .4s;
                         padding: 10px;
                         background-color: map-get($backcolor,nav_enlaces);
                         border-radius: 10px;
