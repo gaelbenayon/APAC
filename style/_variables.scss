@@ -15,20 +15,13 @@ $colores: (
 //
 
 //FONT-FAMILY
-$general-ff: 'DM Sans', sans-serif;
-$titles-ff: 'Tilt Warp', cursive;
-$subtitles-ff: 'Oswald', sans-serif;
-$apac-ff: 'Oswald', sans-serif;
-$nav_enlaces-ff: 'Oswald', sans-serif;
-
 $fonts: (
-    general: $general-ff,
-    titles: $titles-ff,
-    subtitles: $subtitles-ff,
-    apac: $apac-ff,
-    nav_enlaces: $nav_enlaces-ff,
+    general: 'DM Sans',
+    titles: 'Tilt Warp',
+    subtitles: 'Oswald',
+    apac: 'Oswald',
+    nav_enlaces: 'Oswald',
 );
-//
 
 //BACKGROUND-COLOR
 $backcolor: (

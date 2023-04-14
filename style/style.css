@@ -161,7 +161,7 @@ html {
 }
 html body {
   overflow-x: hidden;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
   background-color: rgb(246, 242, 234);
 }
 html a {
@@ -192,7 +192,7 @@ html .link:hover {
 }
 html .banner {
   width: 70%;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   font-size: 24px;
   text-transform: uppercase;
   color: #F27324;
@@ -202,7 +202,7 @@ html .banner {
   margin-bottom: 20px;
 }
 html .titles {
-  font-family: "Tilt Warp", cursive;
+  font-family: "Tilt Warp";
   font-size: 40px;
   margin: auto;
   margin-top: 0;
@@ -214,7 +214,7 @@ html .titles {
   padding: 15px;
 }
 html .subtitles {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   font-size: 25px;
   margin: auto;
   margin-top: 20px;
@@ -296,7 +296,7 @@ html header nav .nav_logo a:hover {
   transform: translateY(1px);
 }
 html header nav .nav_logo a span {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   font-size: 45px;
   font-weight: 600;
   margin-right: 12px;
@@ -315,7 +315,7 @@ html header nav .nav_enlaces li {
 }
 html header nav .nav_enlaces a {
   color: #fff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   font-weight: 400;
   font-size: 18px;
   transition-property: padding, background-color, border-radius;
@@ -352,7 +352,7 @@ html header .menuShow .menu_enlaces li {
 }
 html header .menuShow .menu_enlaces a {
   color: #fff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   font-weight: 400;
   font-size: 26px;
 }
