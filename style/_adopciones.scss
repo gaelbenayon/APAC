@@ -13,6 +13,7 @@ main {
         #adopciones_galeria--row {
             display: none;
             overflow-x: scroll;
+            overflow-y: hidden;
             img {
                 width: 350px;
                 height: 300px;
@@ -43,10 +44,9 @@ main {
         h2 {
             background-color: map-get($colores,principal);
             color: #fff;
-            font-size: 1.3em;
-            margin: auto;
             padding: 10px;
             border-radius: 15px;
+            margin-bottom: 0px;
         }
         i {
             color: map-get($colores,principal);
@@ -54,19 +54,9 @@ main {
         }
         #adopcionesInfo {
             text-align: center;
-            margin-top: 20px;
+            margin: 10px;
             display: flex;
             flex-direction: column;
-            div {
-                margin: 10px;
-                h3 {
-                    color: map-get($colores,principal);
-                    font-weight: bold;
-                    font-size: 20px;
-                    padding-bottom: 5px;
-                }
-                .bigger {font-size: 25px;}
-            }
         }
         #adopcionesPaseo, #adopcionesCuidados {
             p {display: inline;}

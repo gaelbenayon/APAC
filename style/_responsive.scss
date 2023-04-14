@@ -113,6 +113,14 @@
 
 @media only screen and (max-width:768px) {
     html {
+        main {
+            article p {font-size: 18px;}
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    html {
         header {
             #header_nav {
                 .nav_enlaces {display: none;}
@@ -122,24 +130,12 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
-    html {
-        main {
-            article p {font-size: 20px;}
-            #veterinarias {
-                #veterinarias-grid-container {
-                    a, span {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     html {
+        .titles {font-size: 45px;}
+        .subtitles {font-size: 28px;}
         main {
+            article p {font-size: 20px;}
             #sobrenosotros {
                 #sobrenosotros_img {background-position-y: 75%;}
             }
@@ -154,6 +150,13 @@
             #voluntarios {
                 #voluntarios_img {background-position-y: 70%;}
             }
+            #veterinarias {
+                #veterinarias-grid-container {
+                    a, span {
+                        font-size: 18px;
+                    }
+                }
+            }
         }
         footer {
             .footer_enlaces {
@@ -167,6 +170,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 920px) and (orientation: landscape) {
     main {
         #sobrenosotros {
