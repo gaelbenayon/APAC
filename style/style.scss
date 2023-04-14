@@ -160,7 +160,7 @@ html {
                     &:hover {
                         transition: .4s;
                         padding: 10px;
-                        background-color: map-get($backcolor,nav_enlaces);
+                        background-color: map-get($backcolor,nav_enlaces_hover);
                         border-radius: 10px;
                     }
                 }

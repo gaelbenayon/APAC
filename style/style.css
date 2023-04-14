@@ -320,6 +320,7 @@ html header nav .nav_enlaces a {
 html header nav .nav_enlaces a:hover {
   transition: 0.4s;
   padding: 10px;
+  background-color: rgb(255, 69, 0);
   border-radius: 10px;
 }
 html header nav #nav_menu {
