@@ -287,12 +287,10 @@ html header nav .nav_logo a {
   display: flex;
   align-items: center;
   color: #fff;
-  transition-property: color, transform;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s;
 }
 html header nav .nav_logo a:hover {
   color: rgba(255, 255, 255, 0.6941176471);
-  transition: 0.4s;
   transform: translateY(1px);
 }
 html header nav .nav_logo a span {
@@ -318,7 +316,6 @@ html header nav .nav_enlaces a {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 18px;
-  transition-property: padding, background-color, border-radius;
   transition: all 0.4s ease-out;
 }
 html header nav .nav_enlaces a:hover {
@@ -330,6 +327,7 @@ html header nav #nav_menu {
   color: #fff;
   display: none;
   padding-right: 30px;
+  cursor: pointer;
 }
 html header nav .menu_enlaces {
   display: none;
@@ -349,17 +347,22 @@ html header .menuShow .menu_enlaces {
 }
 html header .menuShow .menu_enlaces li {
   padding: 15px;
+  transition: all 0.4s ease-out;
+}
+html header .menuShow .menu_enlaces li:hover {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+html header .menuShow .menu_enlaces li:hover a {
+  color: #F27324;
 }
 html header .menuShow .menu_enlaces a {
   color: #fff;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 26px;
-}
-html header .menuShow .menu_enlaces a:hover {
-  transition: 0.4s;
-  padding: 10px;
-  border-radius: 10px;
 }
 html main {
   padding-top: 80px;
@@ -387,6 +390,11 @@ html footer .footer_enlaces a {
   background-color: #F27324;
   border-radius: 15px;
   margin-bottom: 15px;
+  transition-property: background-color;
+  transition: background-color 0.4s ease-in-out;
+}
+html footer .footer_enlaces a:hover {
+  background-color: rgb(255, 69, 0);
 }
 html footer .footer_enlaces i {
   margin-right: 10px;

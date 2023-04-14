@@ -132,11 +132,9 @@ html {
                     display: flex;
                     align-items: center;
                     color: map-get($colores,nav_enlaces);
-                    transition-property: color,transform;
-                    transition: all .5s ease-out;
+                    transition: all .5s;
                     &:hover {
                         color: map-get($colores,nav_logo_hover);
-                        transition: .4s;
                         transform: translateY(1px);
                     }
                     span {
@@ -159,7 +157,6 @@ html {
                     font-family: map-get($fonts,nav_enlaces);
                     font-weight: 400;
                     font-size: 18px;
-                    transition-property: padding,background-color,border-radius;
                     transition: all .4s ease-out;
                     &:hover {
                         padding: 10px;
@@ -172,6 +169,7 @@ html {
                 color: #fff;
                 display: none;
                 padding-right: 30px;
+                cursor: pointer;
             }
             .menu_enlaces {display: none;}
         }
@@ -186,18 +184,24 @@ html {
                 align-items: center;
                 flex-wrap: wrap;
                 margin-top: 20px;
-                li {padding: 15px}
+                li {
+                    padding: 15px;
+                    transition: all 0.4s ease-out;
+                    &:hover {
+                        padding: 8px;
+                        margin-bottom: 10px;
+                        border-radius: 10px;
+                        background-color: #fff;
+                        a {
+                            color: map-get($colores,principal);
+                        }  
+                    }
+                }
                 a {
                     color: map-get($colores,nav_enlaces);
                     font-family: map-get($fonts,nav_enlaces);
                     font-weight: 400;
                     font-size: 26px;
-                    &:hover {
-                        transition: .4s;
-                        padding: 10px;
-                        background-color: map-get($backcolor,nav_enlaces);
-                        border-radius: 10px;
-                    }
                 }
             }
         }  
@@ -227,6 +231,11 @@ html {
                 background-color: map-get($colores,principal);
                 border-radius: 15px;
                 margin-bottom: 15px;
+                transition-property: background-color;
+                transition: background-color 0.4s ease-in-out;
+                &:hover {
+                    background-color: map-get($backcolor,footer_enlaces_hover);
+                }
             }
             i {
                 margin-right: 10px;
