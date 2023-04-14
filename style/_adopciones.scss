@@ -13,6 +13,7 @@ main {
         #adopciones_galeria--row {
             display: none;
             overflow-x: scroll;
+            overflow-y: hidden;
             img {
                 width: 300px;
                 height: 300px;
@@ -41,32 +42,21 @@ main {
             h5 {text-transform: uppercase;}
         }
         h2 {
-            background-color: $principal-color;
+            background-color: map-get($colores,principal);
             color: #fff;
-            font-size: 1.3em;
-            margin: auto;
             padding: 10px;
             border-radius: 15px;
+            margin-bottom: 0px;
         }
         i {
-            color: $principal-color;
+            color: map-get($colores,principal);
             margin-right: 10px;
         }
         #adopcionesInfo {
             text-align: center;
-            margin-top: 20px;
+            margin: 10px;
             display: flex;
             flex-direction: column;
-            div {
-                margin: 10px;
-                h3 {
-                    color: $principal-color;
-                    font-weight: bold;
-                    font-size: 20px;
-                    padding-bottom: 5px;
-                }
-                .bigger {font-size: 25px;}
-            }
         }
         #adopcionesPaseo, #adopcionesCuidados {
             p {display: inline;}

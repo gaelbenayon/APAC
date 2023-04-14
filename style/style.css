@@ -67,6 +67,7 @@ main #adopciones .anotaciones {
 main #adopciones #adopciones_galeria--row {
   display: none;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 main #adopciones #adopciones_galeria--row img {
   width: 300px;
@@ -99,10 +100,9 @@ main #adopciones #adopciones_galeria--carousel h5 {
 main #adopciones h2 {
   background-color: #F27324;
   color: #fff;
-  font-size: 1.3em;
-  margin: auto;
   padding: 10px;
   border-radius: 15px;
+  margin-bottom: 0px;
 }
 main #adopciones i {
   color: #F27324;
@@ -110,21 +110,9 @@ main #adopciones i {
 }
 main #adopciones #adopcionesInfo {
   text-align: center;
-  margin-top: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-}
-main #adopciones #adopcionesInfo div {
-  margin: 10px;
-}
-main #adopciones #adopcionesInfo div h3 {
-  color: #F27324;
-  font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 5px;
-}
-main #adopciones #adopcionesInfo div .bigger {
-  font-size: 25px;
 }
 main #adopciones #adopcionesPaseo p, main #adopciones #adopcionesCuidados p {
   display: inline;
@@ -153,7 +141,7 @@ main #veterinarias {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-main #veterinarias-grid-container article {
+main #veterinarias #veterinarias-grid-container article {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
@@ -161,10 +149,10 @@ main #veterinarias-grid-container article {
   align-items: center;
   row-gap: 5px;
 }
-main #veterinarias-grid-container a {
+main #veterinarias #veterinarias-grid-container article a {
   display: block;
 }
-main #veterinarias-grid-container a:hover {
+main #veterinarias #veterinarias-grid-container article a:hover {
   border: none;
 }
 
@@ -215,7 +203,7 @@ html .banner {
 }
 html .titles {
   font-family: "Tilt Warp", cursive;
-  font-size: 2.1em;
+  font-size: 40px;
   margin: auto;
   margin-top: 0;
   margin-bottom: 40px;
@@ -227,7 +215,7 @@ html .titles {
 }
 html .subtitles {
   font-family: "Oswald", sans-serif;
-  font-size: 1.8em;
+  font-size: 25px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -332,7 +320,6 @@ html header nav .nav_enlaces a {
 html header nav .nav_enlaces a:hover {
   transition: 0.4s;
   padding: 10px;
-  background-color: rgb(255, 69, 0);
   border-radius: 10px;
 }
 html header nav #nav_menu {
@@ -368,7 +355,6 @@ html header .menuShow .menu_enlaces a {
 html header .menuShow .menu_enlaces a:hover {
   transition: 0.4s;
   padding: 10px;
-  background-color: rgb(255, 69, 0);
   border-radius: 10px;
 }
 html main {
@@ -497,6 +483,11 @@ html footer .copyright {
   }
 }
 @media only screen and (max-width: 768px) {
+  html main article p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 950px) {
   html header #header_nav .nav_enlaces {
     display: none;
   }
@@ -505,15 +496,27 @@ html footer .copyright {
   }
 }
 @media only screen and (min-width: 1200px) {
+  html .titles {
+    font-size: 45px;
+  }
+  html .subtitles {
+    font-size: 28px;
+  }
+  html main article p {
+    font-size: 20px;
+  }
   html main #sobrenosotros #sobrenosotros_img {
     background-position-y: 75%;
   }
   html main #adopciones #adopciones_galeria--row img {
-    width: 365px;
-    height: 365px;
+    width: 400px;
+    height: 400px;
   }
   html main #voluntarios #voluntarios_img {
     background-position-y: 70%;
+  }
+  html main #veterinarias #veterinarias-grid-container a, html main #veterinarias #veterinarias-grid-container span {
+    font-size: 18px;
   }
   html footer .footer_enlaces a {
     font-size: 18px;

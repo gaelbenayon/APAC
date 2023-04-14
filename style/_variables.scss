@@ -1,27 +1,38 @@
 //FONTS
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@400;600&family=Tilt+Warp&display=swap');
 
-//GENERAL
-$body-bc: rgb(246, 242, 234);
-$principal-color: #F27324;
-$enlaces-color: #f27324c5;
-$titles-fontfamily: 'Tilt Warp', cursive;
-$subtitles-fontfamily: 'Oswald', sans-serif;
-$general-fontfamily: 'DM Sans', sans-serif;
-$apac-fontfamily: 'Oswald', sans-serif;
-$anotaciones-color: grey;
+//COLORES
+$colores: (
+    principal: #F27324,
+    enlaces: #f27324c5,
+    nav_enlaces: #fff,
+    nav_logo_hover: #ffffffb1,
+    anotaciones: grey,
+    novedad_fecha: rgb(172, 168, 168),
+    footer_enlaces: #fff,
+    footer_copyright: #fff,
+);
+//
 
-//NAV
-$nav_enlaces-color: #fff;
-$nav_enlaces-fontfamily: 'Oswald', sans-serif;
-$nav_enlaces-bc_hover: rgb(255, 69, 0);
-$nav_logo-color_hover: #ffffffb1;
+//FONT-FAMILY
+$general-ff: 'DM Sans', sans-serif;
+$titles-ff: 'Tilt Warp', cursive;
+$subtitles-ff: 'Oswald', sans-serif;
+$apac-ff: 'Oswald', sans-serif;
+$nav_enlaces-ff: 'Oswald', sans-serif;
 
-//NOVEDAD
-$novedad_fecha-color: rgb(172, 168, 168);
+$fonts: (
+    general: $general-ff,
+    titles: $titles-ff,
+    subtitles: $subtitles-ff,
+    apac: $apac-ff,
+    nav_enlaces: $nav_enlaces-ff,
+);
+//
 
-
-
-//FOOTER
-$footer_enlaces-color: #fff;
-$footer_copyright-color: #fff;
+//BACKGROUND-COLOR
+$backcolor: (
+    body: rgb(246, 242, 234),
+    nav_enlaces_hover: rgb(255, 69, 0),
+);
+//
