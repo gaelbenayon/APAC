@@ -161,10 +161,10 @@ main #veterinarias-grid-container article {
   align-items: center;
   row-gap: 5px;
 }
-main #veterinarias-grid-container a {
+main #veterinarias-grid-container article a {
   display: block;
 }
-main #veterinarias-grid-container a:hover {
+main #veterinarias-grid-container article a:hover {
   border: none;
 }
 
@@ -173,7 +173,7 @@ html {
 }
 html body {
   overflow-x: hidden;
-  font-family: "'DM Sans', sans-serif";
+  font-family: "DM Sans", sans-serif;
   background-color: rgb(246, 242, 234);
 }
 html a {
@@ -204,7 +204,7 @@ html .link:hover {
 }
 html .banner {
   width: 70%;
-  font-family: "'Oswald', sans-serif";
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   color: #F27324;
@@ -214,7 +214,7 @@ html .banner {
   margin-bottom: 20px;
 }
 html .titles {
-  font-family: "'Tilt Warp', cursive";
+  font-family: "Tilt Warp", cursive;
   font-size: 2.1em;
   margin: auto;
   margin-top: 0;
@@ -226,7 +226,7 @@ html .titles {
   padding: 15px;
 }
 html .subtitles {
-  font-family: "'Oswald', sans-serif";
+  font-family: "Oswald", sans-serif;
   font-size: 1.8em;
   margin: auto;
   margin-top: 20px;
@@ -301,7 +301,7 @@ html header nav .nav_logo a {
   color: #fff;
 }
 html header nav .nav_logo a span {
-  font-family: "'Oswald', sans-serif";
+  font-family: "Oswald", sans-serif;
   font-size: 45px;
   font-weight: 600;
   margin-right: 12px;
@@ -325,14 +325,13 @@ html header nav .nav_enlaces li {
 }
 html header nav .nav_enlaces a {
   color: #fff;
-  font-family: "'Oswald', sans-serif";
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 html header nav .nav_enlaces a:hover {
   transition: 0.4s;
   padding: 10px;
-  background-color: rgb(255, 69, 0);
   border-radius: 10px;
 }
 html header nav #nav_menu {
@@ -361,14 +360,13 @@ html header .menuShow .menu_enlaces li {
 }
 html header .menuShow .menu_enlaces a {
   color: #fff;
-  font-family: "'Oswald', sans-serif";
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 26px;
 }
 html header .menuShow .menu_enlaces a:hover {
   transition: 0.4s;
   padding: 10px;
-  background-color: rgb(255, 69, 0);
   border-radius: 10px;
 }
 html main {
@@ -504,13 +502,21 @@ html footer .copyright {
     display: block;
   }
 }
+@media only screen and (min-width: 992px) {
+  html main article p {
+    font-size: 20px;
+  }
+  html main #veterinarias #veterinarias-grid-container a, html main #veterinarias #veterinarias-grid-container span {
+    font-size: 18px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   html main #sobrenosotros #sobrenosotros_img {
     background-position-y: 75%;
   }
   html main #adopciones #adopciones_galeria--row img {
-    width: 365px;
-    height: 365px;
+    width: 400px;
+    height: 400px;
   }
   html main #voluntarios #voluntarios_img {
     background-position-y: 70%;

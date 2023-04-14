@@ -11,6 +11,6 @@ main {
     }
     #novedad_info p {
         margin-bottom: 10px;
-        .novedad_fecha {color: $novedad_fecha-color;}
+        .novedad_fecha {color: map-get($colores,novedad_fecha);}
     }
 }

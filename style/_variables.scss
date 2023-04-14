@@ -15,12 +15,18 @@ $colores: (
 //
 
 //FONT-FAMILY
+$general-ff: 'DM Sans', sans-serif;
+$titles-ff: 'Tilt Warp', cursive;
+$subtitles-ff: 'Oswald', sans-serif;
+$apac-ff: 'Oswald', sans-serif;
+$nav_enlaces-ff: 'Oswald', sans-serif;
+
 $fonts: (
-    general: "'DM Sans', sans-serif",
-    titles: "'Tilt Warp', cursive",
-    subtitles: "'Oswald', sans-serif",
-    apac: "'Oswald', sans-serif",
-    nav_enlaces: "'Oswald', sans-serif",
+    general: $general-ff,
+    titles: $titles-ff,
+    subtitles: $subtitles-ff,
+    apac: $apac-ff,
+    nav_enlaces: $nav_enlaces-ff,
 );
 //
 
@@ -30,27 +36,3 @@ $backcolor: (
     nav_enlaces_hover: rgb(255, 69, 0),
 );
 //
-
-
-//GENERAL
-$body-bc: rgb(246, 242, 234);
-$principal-color: #F27324;
-$enlaces-color: #f27324c5;
-// $titles-fontfamily: 'Tilt Warp', cursive;
-// $subtitles-fontfamily: 'Oswald', sans-serif;
-// $general-fontfamily: 'DM Sans', sans-serif;
-// $apac-fontfamily: 'Oswald', sans-serif;
-$anotaciones-color: grey;
-
-//NAV
-$nav_enlaces-color: #fff;
-// $nav_enlaces-fontfamily: 'Oswald', sans-serif;
-$nav_enlaces-bc_hover: rgb(255, 69, 0);
-$nav_logo-color_hover: #ffffffb1;
-
-//NOVEDAD
-$novedad_fecha-color: rgb(172, 168, 168);
-
-//FOOTER
-$footer_enlaces-color: #fff;
-$footer_copyright-color: #fff;

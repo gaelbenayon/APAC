@@ -41,7 +41,7 @@ main {
             h5 {text-transform: uppercase;}
         }
         h2 {
-            background-color: $principal-color;
+            background-color: map-get($colores,principal);
             color: #fff;
             font-size: 1.3em;
             margin: auto;
@@ -49,7 +49,7 @@ main {
             border-radius: 15px;
         }
         i {
-            color: $principal-color;
+            color: map-get($colores,principal);
             margin-right: 10px;
         }
         #adopcionesInfo {
@@ -60,7 +60,7 @@ main {
             div {
                 margin: 10px;
                 h3 {
-                    color: $principal-color;
+                    color: map-get($colores,principal);
                     font-weight: bold;
                     font-size: 20px;
                     padding-bottom: 5px;

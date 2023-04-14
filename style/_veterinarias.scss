@@ -11,10 +11,10 @@ main {
             justify-content: center;
             align-items: center;
             row-gap: 5px;
-        }
-        a {
-            display: block;
-            &:hover{border: none;}
+            a {
+                display: block;
+                &:hover{border: none;}
+            }
         }
     }
 }
