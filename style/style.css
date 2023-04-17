@@ -156,6 +156,30 @@ main #veterinarias #veterinarias-grid-container article a:hover {
   border: none;
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes separador {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90vw;
+  }
+}
+@keyframes separadorShort {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60vw;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -200,6 +224,8 @@ html .banner {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  animation-name: opacity;
+  animation-duration: 1s;
 }
 html .titles {
   font-family: "Tilt Warp";
@@ -230,9 +256,12 @@ html .separador, html .separador--short, html .separador--short--nomt, html .sep
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  animation-name: separador;
+  animation-duration: 0.6s;
 }
 html .separador--short, html .separador--short--nomt, html .separador--short--nomb, html .separador--short--nomargin {
   width: 60vw;
+  animation-name: separadorShort;
 }
 html .separador--short--nomargin {
   margin: 0;
@@ -262,7 +291,7 @@ html .sumate {
 }
 html .anotaciones {
   color: grey;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin-top: 10px;
 }

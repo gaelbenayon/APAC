@@ -5,6 +5,7 @@
 @import "adopciones";
 @import "voluntarios";
 @import "veterinarias";
+@import "animaciones";
 //RESPONSIVE IS AT THE BOTTOM
 
 html {
@@ -43,6 +44,8 @@ html {
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        animation-name: opacity;
+        animation-duration: 1s;
     }
     @mixin headings ($font-family,$font-size,$mt,$mb) {
         font-family: $font-family;
@@ -70,10 +73,13 @@ html {
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        animation-name: separador;
+        animation-duration: 0.6s;
     }
     .separador--short {
         @extend .separador;
         width: 60vw;
+        animation-name: separadorShort;
     }
     .separador--short--nomargin {
         @extend .separador--short;
@@ -106,7 +112,7 @@ html {
     }
     .anotaciones {
         color: map-get($colores,anotaciones);
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         margin-top: 10px;
     }
