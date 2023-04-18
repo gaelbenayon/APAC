@@ -257,6 +257,13 @@ html {
             font-size: 13px;
             width: 100vw;
             height: 25px;
+            a {
+                color: rgb(216, 210, 210);
+                &:hover {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
