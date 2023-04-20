@@ -68,6 +68,7 @@ main #adopciones #adopciones_galeria--row {
   display: none;
   overflow-x: scroll;
   overflow-y: hidden;
+  margin-bottom: 30px;
 }
 main #adopciones #adopciones_galeria--row img {
   width: 300px;
@@ -265,6 +266,7 @@ html .separador--short, html .separador--short--nomt, html .separador--short--no
 }
 html .separador--short--nomargin {
   margin: 0;
+  margin: auto;
 }
 html .separador--short--nomb {
   margin-bottom: 0;
@@ -398,9 +400,6 @@ html main {
 }
 html main article p {
   font-size: 16px;
-}
-html footer {
-  width: 100vw;
 }
 html footer .titles {
   margin-bottom: 25px;

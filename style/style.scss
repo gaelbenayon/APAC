@@ -83,7 +83,8 @@ html {
     }
     .separador--short--nomargin {
         @extend .separador--short;
-        margin: 0
+        margin: 0;
+        margin: auto;
     }
     .separador--short--nomb {
         @extend .separador--short;
@@ -221,10 +222,8 @@ html {
     }
 
     footer {
-        width: 100vw;
         .titles {margin-bottom: 25px;}
         .footer_enlaces {
-            // flex-direction: column;
             margin: auto;
             margin-bottom: 30px;
             a {
