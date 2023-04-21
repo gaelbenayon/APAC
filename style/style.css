@@ -85,7 +85,7 @@ main #adopciones #adopciones_galeria--row .image-container .galeria_nombres {
   position: absolute;
   top: 80%;
   color: #fff;
-  line-height: 1.2;
+  font-family: "Indie Flower";
 }
 main #adopciones img {
   width: 100%;

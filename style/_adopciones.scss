@@ -29,7 +29,7 @@ main {
                     position: absolute;
                     top: 80%;
                     color: #fff;
-                    line-height: 1.2;
+                    font-family: map-get($fonts,galeria_nombres);
                 }
             }
         }
