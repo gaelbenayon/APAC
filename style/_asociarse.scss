@@ -4,18 +4,6 @@ main {
         #asociarse_img {
             background-image: url("../assets/asociarse.jpg");
             background-position-x: 40%;
-            .img_goDown {
-                position: absolute;
-                text-align: center;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            a {
-                font-size: 40px;
-                font-weight: bold;
-                color: map-get($colores,principal);             
-            }
         }
         article {
             width: 90%;

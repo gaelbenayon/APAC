@@ -15,6 +15,20 @@ main {
                     &:hover{border: none;}
                 }
             }
+            i {
+                display: none;
+                font-size: 18px;
+                padding-right: 4px;
+                color: map-get($colores,principal);
+            }
+            .grid_indicadores {
+                i {
+                    display: inline;
+                    font-size: 22px;
+                    padding-right: 8px;
+                    color: map-get($colores,principal);
+                }
+            }
         }
     }
 }
