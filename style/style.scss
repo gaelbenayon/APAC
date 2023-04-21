@@ -194,7 +194,7 @@ html {
                 li {
                     padding: 15px;
                     transition: all 0.4s ease-out;
-                    &:hover {
+                    &:hover,&:active,&:focus {
                         padding: 8px;
                         margin-bottom: 10px;
                         border-radius: 10px;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@400;600&family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@400;600&family=Tilt+Warp&family=Indie+Flower&display=swap");
 main .novedad-grid-container {
   padding: 20px;
   border-radius: 20px;
@@ -97,6 +97,7 @@ main #adopciones #adopciones_galeria--carousel {
 }
 main #adopciones #adopciones_galeria--carousel h5 {
   text-transform: uppercase;
+  font-family: "Indie Flower";
 }
 main #adopciones h2 {
   background-color: #F27324;
@@ -380,13 +381,13 @@ html header .menuShow .menu_enlaces li {
   padding: 15px;
   transition: all 0.4s ease-out;
 }
-html header .menuShow .menu_enlaces li:hover {
+html header .menuShow .menu_enlaces li:hover, html header .menuShow .menu_enlaces li:active, html header .menuShow .menu_enlaces li:focus {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #fff;
 }
-html header .menuShow .menu_enlaces li:hover a {
+html header .menuShow .menu_enlaces li:hover a, html header .menuShow .menu_enlaces li:active a, html header .menuShow .menu_enlaces li:focus a {
   color: #F27324;
 }
 html header .menuShow .menu_enlaces a {

@@ -40,7 +40,10 @@ main {
         #adopciones_galeria--carousel {
             display: none;
             margin: 20px 0px 20px 0px !important;
-            h5 {text-transform: uppercase;}
+            h5 {
+                text-transform: uppercase;
+                font-family: map-get($fonts,galeria_nombres);
+            }
         }
         h2 {
             background-color: map-get($colores,principal);
