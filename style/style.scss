@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
     //GENERAL
     body {
-        overflow-x: hidden;
+        // overflow-x: hidden;
         font-family: map-get($fonts,general);
         background-color: map-get($backcolor,body);
     }
@@ -131,7 +131,7 @@ html {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 100vw;
+                width: 100%;
             }
             .nav_logo {
                 padding: 0px 30px;
@@ -254,7 +254,7 @@ html {
             background-color: map-get($colores,principal);
             color: map-get($colores,footer_copyright);
             font-size: 13px;
-            width: 100vw;
+            width: 100%;
             height: 25px;
             a {
                 color: rgb(216, 210, 210);

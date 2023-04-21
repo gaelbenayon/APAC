@@ -8,6 +8,7 @@
                 }
             }
         }
+        .back_img {height: calc(100vh - 100px);}
         main {
             padding-top: 100px;
             //GENERAL
@@ -16,7 +17,7 @@
             }
             //FIN GENERAL
             //CLASES
-            .back_img {height: calc(100vh - 100px);}
+            
             .banner {font-size: 20px;}
             //FIN CLASES
             #sobrenosotros {
