@@ -138,6 +138,7 @@ html {
         nav {
             display: flex;
             position: sticky;
+            top: 0;
             z-index: 100;
             width: 100vw;
             height: 70px;
@@ -199,7 +200,7 @@ html {
             position: fixed;
             transition: .5s;
             height: 100vh;
-            width: 75vw;
+            width: 100vw;
             flex-direction: column;
             padding-top: 30px;
             .menu_enlaces {
@@ -221,13 +222,14 @@ html {
                             color: map-get($colores,principal);
                         }  
                     }
+                    a {
+                        color: map-get($colores,nav_enlaces);
+                        font-family: map-get($fonts,nav_enlaces);
+                        font-weight: 400;
+                        font-size: 22px;
+                    }
                 }
-                a {
-                    color: map-get($colores,nav_enlaces);
-                    font-family: map-get($fonts,nav_enlaces);
-                    font-weight: 400;
-                    font-size: 26px;
-                }
+                
             }
         }  
     }
