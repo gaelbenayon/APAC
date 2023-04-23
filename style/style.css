@@ -186,6 +186,7 @@ html {
   scroll-behavior: smooth;
 }
 html body {
+  overflow-x: hidden;
   font-family: "DM Sans";
   background-color: rgb(246, 242, 234);
 }
@@ -313,80 +314,80 @@ html .img_goDown a {
 html .img_goDown a:hover {
   color: #fff;
 }
-html nav {
+html header nav {
   display: flex;
-  position: sticky;
+  position: fixed;
   z-index: 100;
   width: 100vw;
   height: 70px;
   background-color: #F27324;
 }
-html nav .top {
+html header nav .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100vw;
 }
-html nav .nav_logo {
+html header nav .nav_logo {
   padding: 0px 30px;
 }
-html nav .nav_logo a {
+html header nav .nav_logo a {
   display: flex;
   align-items: center;
   color: #fff;
   transition: all 0.5s;
 }
-html nav .nav_logo a:hover {
+html header nav .nav_logo a:hover {
   color: rgba(255, 255, 255, 0.6941176471);
   transform: translateY(1px);
 }
-html nav .nav_logo a span {
+html header nav .nav_logo a span {
   font-family: "Oswald";
   font-size: 45px;
   font-weight: 600;
   margin-right: 12px;
 }
-html nav .nav_logo a i {
+html header nav .nav_logo a i {
   font-size: 20px;
 }
-html nav .nav_enlaces {
+html header nav .nav_enlaces {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 0px 30px;
 }
-html nav .nav_enlaces li {
+html header nav .nav_enlaces li {
   padding: 5px 6px 5px 6px;
 }
-html nav .nav_enlaces a {
+html header nav .nav_enlaces a {
   color: #fff;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 18px;
   transition: all 0.4s ease-out;
 }
-html nav .nav_enlaces a:hover {
+html header nav .nav_enlaces a:hover {
   padding: 10px;
   background-color: rgb(255, 69, 0);
   border-radius: 10px;
 }
-html nav #nav_menu {
+html header nav #nav_menu {
   color: #fff;
   display: none;
   padding-right: 30px;
   cursor: pointer;
 }
-html nav .menu_enlaces {
+html header nav .menu_enlaces {
   display: none;
 }
-html .menuShow {
+html header .menuShow {
   transition: 0.5s;
   height: 100vh;
   width: 75vw;
   flex-direction: column;
   padding-top: 30px;
 }
-html .menuShow .menu_enlaces {
+html header .menuShow .menu_enlaces {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -394,24 +395,27 @@ html .menuShow .menu_enlaces {
   margin-top: 20px;
   text-align: center;
 }
-html .menuShow .menu_enlaces li {
+html header .menuShow .menu_enlaces li {
   padding: 15px;
   transition: all 0.4s ease-out;
 }
-html .menuShow .menu_enlaces li:hover, html .menuShow .menu_enlaces li:active, html .menuShow .menu_enlaces li:focus {
+html header .menuShow .menu_enlaces li:hover, html header .menuShow .menu_enlaces li:active, html header .menuShow .menu_enlaces li:focus {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #fff;
 }
-html .menuShow .menu_enlaces li:hover a, html .menuShow .menu_enlaces li:active a, html .menuShow .menu_enlaces li:focus a {
+html header .menuShow .menu_enlaces li:hover a, html header .menuShow .menu_enlaces li:active a, html header .menuShow .menu_enlaces li:focus a {
   color: #F27324;
 }
-html .menuShow .menu_enlaces a {
+html header .menuShow .menu_enlaces a {
   color: #fff;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 26px;
+}
+html main {
+  padding-top: 70px;
 }
 html main article p {
   font-size: 16px;
@@ -480,7 +484,7 @@ html footer .copyright a:hover {
     line-height: 1.5;
   }
   html main .back_img {
-    height: calc(100vh - 100px);
+    height: 60vh;
   }
   html main .banner {
     font-size: 20px;
