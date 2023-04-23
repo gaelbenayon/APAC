@@ -20,7 +20,7 @@ main #sobrenosotros {
 }
 main #sobrenosotros #sobrenosotros_img {
   background-image: url("../assets/sobreapac.jpg");
-  background-position-x: 40%;
+  background-position-y: bottom;
 }
 main #sobrenosotros #sobrenosotros_info #info_texto {
   border-radius: 15px;
@@ -186,7 +186,6 @@ html {
   scroll-behavior: smooth;
 }
 html body {
-  overflow-x: hidden;
   font-family: "DM Sans";
   background-color: rgb(246, 242, 234);
 }
@@ -276,7 +275,7 @@ html .separador--short--nomt {
   margin-top: 0;
 }
 html .back_img {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
   width: 100% !important;
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,106 +297,121 @@ html .anotaciones {
   text-align: center;
   margin-top: 10px;
 }
-html header nav {
+html .img_goDown {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  bottom: 5%;
+}
+html .img_goDown a {
+  color: #F27324;
+  transition: all 0.3s ease-out;
+}
+html .img_goDown a:hover {
+  color: #fff;
+}
+html nav {
   display: flex;
-  position: fixed;
+  position: sticky;
   z-index: 100;
   width: 100vw;
-  height: 80px;
+  height: 70px;
   background-color: #F27324;
 }
-html header nav .top {
+html nav .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100vw;
 }
-html header nav .nav_logo {
+html nav .nav_logo {
   padding: 0px 30px;
 }
-html header nav .nav_logo a {
+html nav .nav_logo a {
   display: flex;
   align-items: center;
   color: #fff;
   transition: all 0.5s;
 }
-html header nav .nav_logo a:hover {
+html nav .nav_logo a:hover {
   color: rgba(255, 255, 255, 0.6941176471);
   transform: translateY(1px);
 }
-html header nav .nav_logo a span {
+html nav .nav_logo a span {
   font-family: "Oswald";
   font-size: 45px;
   font-weight: 600;
   margin-right: 12px;
 }
-html header nav .nav_logo a i {
+html nav .nav_logo a i {
   font-size: 20px;
 }
-html header nav .nav_enlaces {
+html nav .nav_enlaces {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 0px 30px;
 }
-html header nav .nav_enlaces li {
+html nav .nav_enlaces li {
   padding: 5px 6px 5px 6px;
 }
-html header nav .nav_enlaces a {
+html nav .nav_enlaces a {
   color: #fff;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 18px;
   transition: all 0.4s ease-out;
 }
-html header nav .nav_enlaces a:hover {
+html nav .nav_enlaces a:hover {
   padding: 10px;
   background-color: rgb(255, 69, 0);
   border-radius: 10px;
 }
-html header nav #nav_menu {
+html nav #nav_menu {
   color: #fff;
   display: none;
   padding-right: 30px;
   cursor: pointer;
 }
-html header nav .menu_enlaces {
+html nav .menu_enlaces {
   display: none;
 }
-html header .menuShow {
+html .menuShow {
   transition: 0.5s;
   height: 100vh;
+  width: 75vw;
   flex-direction: column;
   padding-top: 30px;
 }
-html header .menuShow .menu_enlaces {
+html .menuShow .menu_enlaces {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  text-align: center;
 }
-html header .menuShow .menu_enlaces li {
+html .menuShow .menu_enlaces li {
   padding: 15px;
   transition: all 0.4s ease-out;
 }
-html header .menuShow .menu_enlaces li:hover, html header .menuShow .menu_enlaces li:active, html header .menuShow .menu_enlaces li:focus {
+html .menuShow .menu_enlaces li:hover, html .menuShow .menu_enlaces li:active, html .menuShow .menu_enlaces li:focus {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #fff;
 }
-html header .menuShow .menu_enlaces li:hover a, html header .menuShow .menu_enlaces li:active a, html header .menuShow .menu_enlaces li:focus a {
+html .menuShow .menu_enlaces li:hover a, html .menuShow .menu_enlaces li:active a, html .menuShow .menu_enlaces li:focus a {
   color: #F27324;
 }
-html header .menuShow .menu_enlaces a {
+html .menuShow .menu_enlaces a {
   color: #fff;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 26px;
-}
-html main {
-  padding-top: 80px;
 }
 html main article p {
   font-size: 16px;
@@ -447,6 +461,11 @@ html footer .copyright a:hover {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 300px) {
+  html header .menuShow {
+    width: 100vw;
+  }
+}
 @media only screen and (max-width: 430px) {
   html header nav {
     height: 100px;
@@ -465,6 +484,10 @@ html footer .copyright a:hover {
   }
   html main .banner {
     font-size: 20px;
+  }
+  html main #sobrenosotros #sobrenosotros_img {
+    background-size: 140%;
+    background-position-x: 35%;
   }
   html main #sobrenosotros #sobrenosotros_info #info_mapa {
     width: 100%;
@@ -520,8 +543,12 @@ html footer .copyright a:hover {
   }
 }
 @media only screen and (min-width: 768px) {
+  html header .menuShow {
+    width: 40vw;
+  }
   html main #sobrenosotros #sobrenosotros_img {
     background-position-y: 60%;
+    background-size: 115%;
   }
   html main #asociarse #asociarse_img {
     background-position-y: 60%;
@@ -540,6 +567,11 @@ html footer .copyright a:hover {
     display: none;
   }
   html header #header_nav #nav_menu {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html .img_goDown {
     display: block;
   }
 }
@@ -574,14 +606,23 @@ html footer .copyright a:hover {
   }
 }
 @media only screen and (max-width: 920px) and (orientation: landscape) {
-  main #sobrenosotros #sobrenosotros_img {
+  html main #sobrenosotros #sobrenosotros_img {
     background-position-y: 70%;
   }
-  main #asociarse #asociarse_img {
+  html main #asociarse #asociarse_img {
     background-position-y: 50%;
   }
-  main #voluntarios #voluntarios_img {
-    background-position-y: 55%;
+  html main #voluntarios #voluntarios_img {
+    background-position-y: 65%;
+  }
+}
+@media only screen and (orientation: landscape) {
+  html header .menuShow {
+    width: 100vw;
+  }
+  html header .menuShow .menu_enlaces {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 

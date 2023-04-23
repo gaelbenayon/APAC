@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
     //GENERAL
     body {
-        overflow-x: hidden;
         font-family: map-get($fonts,general);
         background-color: map-get($backcolor,body);
     }
@@ -95,7 +94,7 @@ html {
         margin-top: 0;
     }
     .back_img {
-        height: calc(100vh - 80px);
+        height: calc(100vh - 70px);
         width: 100% !important;
         background-size: cover;
         background-repeat: no-repeat;
@@ -117,15 +116,30 @@ html {
         text-align: center;
         margin-top: 10px;
     }
+    .img_goDown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        font-weight: bold;
+        bottom: 5%;
+        a {
+            color: map-get($colores,principal);
+            transition: all .3s ease-out;
+            &:hover {color: #fff;}
+        }             
+        
+    }
     //FIN CLASES
 
-    header {
+    
         nav {
             display: flex;
-            position: fixed;
+            position: sticky;
             z-index: 100;
             width: 100vw;
-            height: 80px;
+            height: 70px;
             background-color: map-get($colores,principal);
             .top {
                 display: flex;
@@ -183,6 +197,8 @@ html {
         .menuShow {
             transition: .5s;
             height: 100vh;
+            width: 75vw;
+            // overflow-y: scroll;
             flex-direction: column;
             padding-top: 30px;
             .menu_enlaces {
@@ -191,6 +207,7 @@ html {
                 align-items: center;
                 flex-wrap: wrap;
                 margin-top: 20px;
+                text-align: center;
                 li {
                     padding: 15px;
                     transition: all 0.4s ease-out;
@@ -212,10 +229,10 @@ html {
                 }
             }
         }  
-    }
+    
 
     main {
-        padding-top: 80px;
+        // padding-top: 70px;
         article p {
             font-size: 16px;
         }

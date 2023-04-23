@@ -1,3 +1,11 @@
+@media only screen and (max-width: 300px) {
+    html {
+        header {
+            .menuShow {width: 100vw;}
+        }
+    }
+}
+
 @media only screen and (max-width: 430px) {
     html {
         header {
@@ -20,6 +28,10 @@
             .banner {font-size: 20px;}
             //FIN CLASES
             #sobrenosotros {
+                #sobrenosotros_img {
+                    background-size: 140%;
+                    background-position-x: 35%;
+                }
                 #sobrenosotros_info {
                     #info_mapa {width: 100%;}
                 }
@@ -97,9 +109,15 @@
 
 @media only screen and (min-width: 768px) {
     html {
+        header {
+            .menuShow {width: 40vw;}
+        }
         main {
             #sobrenosotros {
-                #sobrenosotros_img {background-position-y: 60%;}
+                #sobrenosotros_img {
+                    background-position-y: 60%;
+                    background-size: 115%;
+                }
             }
             #asociarse {
                 #asociarse_img {background-position-y: 60%;}
@@ -127,6 +145,20 @@
                 #nav_menu {display: block;}
             }
         }
+    }
+}
+
+// @media only screen and (orientation: portrait) and (max-width: 1024px) {
+//     html {
+//         .back_img {
+//             height: calc(75vh - 100px);
+//         }
+//     }
+// }
+
+@media only screen and (min-width: 1024px) {
+    html {
+        .img_goDown {display: block;}
     }
 }
 
@@ -172,15 +204,35 @@
 }
 
 @media only screen and (max-width: 920px) and (orientation: landscape) {
-    main {
-        #sobrenosotros {
-            #sobrenosotros_img {background-position-y: 70%;}
-        }
-        #asociarse {
-            #asociarse_img {background-position-y: 50%;}
-        }
-        #voluntarios {
-            #voluntarios_img {background-position-y: 55%;}
+    html {
+        main {
+            #sobrenosotros {
+                #sobrenosotros_img {
+                    background-position-y: 70%;
+                }
+            }
+            #asociarse {
+                #asociarse_img {background-position-y: 50%;}
+            }
+            #voluntarios {
+                #voluntarios_img {background-position-y: 65%;}
+            }
         }
     }
+
 }
+
+@media only screen and (orientation: landscape) {
+    html {
+        header {
+            .menuShow {
+                width: 100vw;
+                .menu_enlaces {
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            } 
+        }
+    }
+    }
+    
