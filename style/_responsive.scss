@@ -17,14 +17,12 @@
             }
         }
         main {
-            padding-top: 100px;
             //GENERAL
             article p {
                 line-height: 1.5;
             }
             //FIN GENERAL
             //CLASES
-            .back_img {height: calc(60vh);}
             .banner {font-size: 20px;}
             //FIN CLASES
             #sobrenosotros {
@@ -84,7 +82,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -102,6 +99,7 @@
                     padding: 15px;
                 }
                 .grid_indicadores {display: none;}
+                i {display: inline;}
             }
         }
     }
@@ -113,6 +111,9 @@
             .menuShow {width: 40vw;}
         }
         main {
+            //GENERAL
+            article p {font-size: 18px;}
+            //
             #sobrenosotros {
                 #sobrenosotros_img {
                     background-position-y: 60%;
@@ -126,14 +127,7 @@
                 #voluntarios_img {background-position-y: 60%;}
             }
         }
-    }
-}
-
-@media only screen and (max-width:768px) {
-    html {
-        main {
-            article p {font-size: 18px;}
-        }
+        
     }
 }
 
@@ -145,20 +139,6 @@
                 #nav_menu {display: block;}
             }
         }
-    }
-}
-
-// @media only screen and (orientation: portrait) and (max-width: 1024px) {
-//     html {
-//         .back_img {
-//             height: calc(75vh - 100px);
-//         }
-//     }
-// }
-
-@media only screen and (min-width: 1024px) {
-    html {
-        .img_goDown {display: block;}
     }
 }
 
@@ -207,9 +187,7 @@
     html {
         main {
             #sobrenosotros {
-                #sobrenosotros_img {
-                    background-position-y: 70%;
-                }
+                #sobrenosotros_img {background-position-y: 70%;}
             }
             #asociarse {
                 #asociarse_img {background-position-y: 50%;}
@@ -232,6 +210,10 @@
                     justify-content: center;
                 }
             } 
+        }
+        main {
+            .img_goDown {display: block;}
+            .back_img {height: calc(100vh - 70px);}
         }
     }
     }

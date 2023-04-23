@@ -157,6 +157,18 @@ main #veterinarias #veterinarias-grid-container article a {
 main #veterinarias #veterinarias-grid-container article a:hover {
   border: none;
 }
+main #veterinarias #veterinarias-grid-container i {
+  display: none;
+  font-size: 18px;
+  padding-right: 4px;
+  color: #F27324;
+}
+main #veterinarias #veterinarias-grid-container .grid_indicadores i {
+  display: inline;
+  font-size: 22px;
+  padding-right: 8px;
+  color: #F27324;
+}
 
 @keyframes opacity {
   0% {
@@ -186,7 +198,6 @@ html {
   scroll-behavior: smooth;
 }
 html body {
-  overflow-x: hidden;
   font-family: "DM Sans";
   background-color: rgb(246, 242, 234);
 }
@@ -231,7 +242,7 @@ html .banner {
 }
 html .titles {
   font-family: "Tilt Warp";
-  font-size: 40px;
+  font-size: 35px;
   margin: auto;
   margin-top: 0;
   margin-bottom: 40px;
@@ -276,7 +287,7 @@ html .separador--short--nomt {
   margin-top: 0;
 }
 html .back_img {
-  height: calc(100vh - 70px);
+  height: 60vh;
   width: 100% !important;
   background-size: cover;
   background-repeat: no-repeat;
@@ -316,7 +327,7 @@ html .img_goDown a:hover {
 }
 html header nav {
   display: flex;
-  position: fixed;
+  position: sticky;
   z-index: 100;
   width: 100vw;
   height: 70px;
@@ -326,7 +337,7 @@ html header nav .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
 }
 html header nav .nav_logo {
   padding: 0px 30px;
@@ -381,6 +392,7 @@ html header nav .menu_enlaces {
   display: none;
 }
 html header .menuShow {
+  position: fixed;
   transition: 0.5s;
   height: 100vh;
   width: 75vw;
@@ -413,9 +425,6 @@ html header .menuShow .menu_enlaces a {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 26px;
-}
-html main {
-  padding-top: 70px;
 }
 html main article p {
   font-size: 16px;
@@ -454,7 +463,7 @@ html footer .copyright {
   background-color: #F27324;
   color: #fff;
   font-size: 13px;
-  width: 100vw;
+  width: 100%;
   height: 25px;
 }
 html footer .copyright a {
@@ -477,14 +486,8 @@ html footer .copyright a:hover {
   html header nav .nav_enlaces {
     display: none;
   }
-  html main {
-    padding-top: 100px;
-  }
   html main article p {
     line-height: 1.5;
-  }
-  html main .back_img {
-    height: 60vh;
   }
   html main .banner {
     font-size: 20px;
@@ -545,10 +548,16 @@ html footer .copyright a:hover {
   main #veterinarias #veterinarias-grid-container .grid_indicadores {
     display: none;
   }
+  main #veterinarias #veterinarias-grid-container i {
+    display: inline;
+  }
 }
 @media only screen and (min-width: 768px) {
   html header .menuShow {
     width: 40vw;
+  }
+  html main article p {
+    font-size: 18px;
   }
   html main #sobrenosotros #sobrenosotros_img {
     background-position-y: 60%;
@@ -561,21 +570,11 @@ html footer .copyright a:hover {
     background-position-y: 60%;
   }
 }
-@media only screen and (max-width: 768px) {
-  html main article p {
-    font-size: 18px;
-  }
-}
 @media only screen and (max-width: 950px) {
   html header #header_nav .nav_enlaces {
     display: none;
   }
   html header #header_nav #nav_menu {
-    display: block;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  html .img_goDown {
     display: block;
   }
 }
@@ -627,6 +626,12 @@ html footer .copyright a:hover {
   html header .menuShow .menu_enlaces {
     flex-direction: row;
     justify-content: center;
+  }
+  html main .img_goDown {
+    display: block;
+  }
+  html main .back_img {
+    height: calc(100vh - 70px);
   }
 }
 
