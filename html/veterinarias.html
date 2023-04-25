@@ -18,6 +18,10 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!---->
+    <!-- ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!---->
     <link rel="shortcut icon" href="../assets/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css">
     <title>APAC | Veterinarias</title>
@@ -61,7 +65,7 @@
     <main>
         <section id="veterinarias">
             <article>
-                <h1 class="col-11 col-sm-6 col-lg-4 titles">VETERINARIAS</h1>
+                <h1 class="col-11 col-sm-6 col-lg-4 titles animate__animated animate__zoomIn">VETERINARIAS</h1>
                 <hr class="separador">
                 <h2 class="subtitles">CAMPANA</h2>
                 <hr class="separador--short">
@@ -72,7 +76,7 @@
                     <h3><i class="fa-solid fa-location-dot"></i>DIRECCIÓN</h3>
                     <h3><i class="fa-solid fa-phone"></i>TELÉFONO</h3>
                 </article>
-                <article>
+                <article data-aos="fade-up">
                     <span><i class="fa-solid fa-stethoscope"></i>Clínica Veterinaria Labarthe</span>
                     <a href="https://goo.gl/maps/teRNWjwest6GgunH6" target="_blank" class="link">Av. Varela 565 (ex Rivadavia)</a>
                     <div class="grid_telefonos">
@@ -80,7 +84,7 @@
                         <a href="tel:+5493489420939" class="link">03489-420939</a>
                     </div>
                 </article>
-                <article>
+                <article data-aos="fade-up">
                     <span><i class="fa-solid fa-stethoscope"></i>Veterinaria Malamut</span>
                     <a href="https://goo.gl/maps/vhnCv3nTRyEkyfQQA" target="_blank" class="link">Jean Jaures 825</a>
                     <div class="grid_telefonos">
@@ -88,7 +92,7 @@
                         <a class="link" href="tel:+5493489431611">03489-431611</a>
                     </div>                
                 </article>
-                <article>
+                <article data-aos="fade-up">
                     <span><i class="fa-solid fa-stethoscope"></i>VetLife</span>
                     <a href="https://goo.gl/maps/go35ez1J837SGP386" target="_blank" class="link">Av. Varela 980 (ex Rivadavia)</a>
                     <div class="grid_telefonos">
@@ -96,7 +100,7 @@
                         <a class="link" href="tel:+5493489">03489-15-296587</a>
                     </div>                
                 </article>
-                <article>
+                <article data-aos="fade-up">
                     <span class="grid_nombres"><i class="fa-solid fa-stethoscope"></i>Clínica Veterinaria Ameghino</span>
                     <a class="link grid_direcciones" target="_blank" href="https://goo.gl/maps/xxGgHQ3y7wfJW9ZV6">Bv. Ameghino 680</a>
                     <div class="grid_telefonos">
@@ -104,12 +108,12 @@
                         <a class="link" href="tel:+549111563086262">11-15-6308-6262</a>
                     </div>
                 </article>
-                <article>
+                <article data-aos="fade-up">
                     <span><i class="fa-solid fa-stethoscope"></i>Clínica Veterinaria Central</span>
                     <a class="link" target="_blank" href="https://goo.gl/maps/3pYBrursaBLsiTmVA">Av. Mitre 916</a>
                     <a class="link" href="tel:+5493489692475">03489-15-692475</a>
                 </article>
-                <article>
+                <article data-aos="fade-up">
                     <span><i class="fa-solid fa-stethoscope"></i>Consultorio Veterinario Dra. Guadalupe Elias Leguizamon</span>
                     <a href="https://goo.gl/maps/PFonDvGchtijBzSp7" target="_blank" class="link">Iriart 841</a>
                     <div class="grid_telefonos">
@@ -117,7 +121,7 @@
                         <a class="link" href="tel:+5493489682596">03489-15-682596</a>
                     </div>                
                 </article>
-                <article>
+                <article data-aos="fade-up">
                     <span><i class="fa-solid fa-stethoscope"></i>Consultorio Veterinario San Francisco de Asís</span>
                     <a href="https://goo.gl/maps/DDCfxexNTfC7z8Av7" target="_blank" class="link">Av. Balbín 982</a>
                     <a class="link" href="tel:+5493489527400">03489-15-527400</a>
@@ -138,7 +142,12 @@
             <p>&copy APAC 2023 | Desarrollado por <a href="https://linkedin.com/in/gael-benayon" target="_blank">Gael Benayon</a></p>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <!-- ANIMACIONES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!---->
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!---->
+    <script src="../js/main.js"></script>
 </body>
 </html>

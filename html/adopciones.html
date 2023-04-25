@@ -18,25 +18,29 @@
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!---->
+    <!-- ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!---->
     <link rel="shortcut icon" href="../assets/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css">
     <title>APAC | Adopciones </title>
-</head>
-
-<body>
+  </head>
+  
+  <body>
     
     <header>
       <nav id="header_nav">
         <div class="top">
-            <div class="nav_logo">
-                <a href="../index.html">
+          <div class="nav_logo">
+            <a href="../index.html">
                     <span>A.P.A.C.</span>
                     <i class="fa-solid fa-paw"></i>
-                </a>
+                  </a>
             </div>
             <div>
                 <ul class="nav_enlaces">
-                    <li><a href="sobreapac.html">SOBRE NOSOTR@S</a></li>
+                  <li><a href="sobreapac.html">SOBRE NOSOTR@S</a></li>
                     <li><a href="asociarse.html">ASOCIARSE</a></li>
                     <li><a href="#">QUIERO ADOPTAR</a></li>
                     <li><a href="voluntarios.html">VOLUNTARIOS</a></li>
@@ -54,16 +58,16 @@
                 <li><a href="voluntarios.html">VOLUNTARIOS</a></li>
                 <li><a href="veterinarias.html">VETERINARIAS</a></li>
                 <li><a href="#contacto" onclick="menu()">CONTACTO</a></li>
-            </ul>
-        </div>
-    </nav>
-    </header>
+              </ul>
+            </div>
+          </nav>
+        </header>
 
     <main>
         <section id="adopciones">
-            <h1 class="col-12 col-sm-6 col-lg-4 titles">ADOPCIONES</h1>
+            <h1 class="col-12 col-sm-6 col-lg-4 titles animate__animated animate__zoomIn">ADOPCIONES</h1>
             <p class="anotaciones">Deslizá para conocer más perritos</p>
-            <article id="adopciones_galeria--row">
+            <article data-aos="fade-right" data-aos-duration="700"  id="adopciones_galeria--row">
               <div class="image-container">
                 <img src="../assets/animales/chelita.jpg" alt="Chelita">
                 <div class="galeria_nombres">
@@ -96,7 +100,7 @@
               </div>
             </article>
             
-            <div id="adopciones_galeria--carousel" class="carousel slide" data-bs-ride="carousel">
+            <div data-aos="zoom-in" data-aos-duration="700" id="adopciones_galeria--carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#adopciones_galeria--carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#adopciones_galeria--carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -160,8 +164,8 @@
                 </div>
                 <hr class="separador--short--nomb">
                 <div>
-                    <h3 class="subtitles">NECESITÁS ESPACIO</h3>
-                <p>Para que el animal esté cómodo</p>
+                  <h3 class="subtitles">NECESITÁS ESPACIO</h3>
+                  <p>Para que el animal esté cómodo</p>
                 </div>
                 <hr class="separador--short--nomb">
                 <div>
@@ -172,13 +176,13 @@
             <hr class="separador--short--nomt">
 
             <article id="adopcionesPaseo">
-                <ul>
-                    <li><i class="fa-solid fa-dog"></i></i><p>Para una buena convivencia en el paseo con nuestra mascota, llevá collar, correa y bolsa</p></li>
+              <ul>
+                <li><i class="fa-solid fa-dog"></i></i><p>Para una buena convivencia en el paseo con nuestra mascota, llevá collar, correa y bolsa</p></li>
                 </ul>
             </article>
 
             <hr class="separador--short">
-
+            
             <article id="adopcionesCuidados">
                 <ul>
                     <li><i class="fa-solid fa-bone"></i><p>Cumplir el plan sanitario de nuestras mascotas</p></li>
@@ -202,7 +206,12 @@
             <p>&copy APAC 2023 | Desarrollado por <a href="https://linkedin.com/in/gael-benayon" target="_blank">Gael Benayon</a></p>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <!-- ANIMACIONES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!---->
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!---->
+    <script src="../js/main.js"></script>
 </body>
 </html>

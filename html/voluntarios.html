@@ -12,11 +12,15 @@
     <meta property="og:site_name" content="APAC">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Conocé cómo convertirte en voluntari@ para ayudar en el refugio.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/c5ad3a116b.js" crossorigin="anonymous"></script>
     <!---->
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!---->
+    <!-- ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!---->
     <link rel="shortcut icon" href="../assets/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css">
@@ -59,12 +63,12 @@
     <main>
         <section id="voluntarios">
             <article id="voluntarios_img" class="back_img">
-                <h1 class="col-11 col-sm-6 col-lg-4 titles">VOLUNTARIOS</h1>
+                <h1 class="col-11 col-sm-6 col-lg-4 titles animate__animated animate__zoomIn">VOLUNTARIOS</h1>
                 <div class="img_goDown">
-                    <a href="#voluntarios_requisitos"><i class="fa-solid fa-chevron-down"></i></a>
+                    <a class="animate__animated animate__pulse" href="#voluntarios_requisitos"><i class="fa-solid fa-chevron-down"></i></a>
                 </div>
             </article>
-            <article id="voluntarios_requisitos">
+            <article class="pt-md-1" id="voluntarios_requisitos">
                 <h2 class="subtitles">¿CUÁLES SON LOS REQUISITOS?</h2>
                 <p>Ser mayor de 18 años, responsable y tener muchas ganas de ayudar.</p>
                 <hr class="separador--short--nomb">
@@ -99,7 +103,12 @@
             <p>&copy APAC 2023 | Desarrollado por <a href="https://linkedin.com/in/gael-benayon" target="_blank">Gael Benayon</a></p>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- ANIMACIONES -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!---->
+        <!-- BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!---->
+        <script src="../js/main.js"></script>
 </body>
 </html>
