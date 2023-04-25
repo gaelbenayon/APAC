@@ -70,6 +70,10 @@ main #adopciones #adopciones_galeria--row {
   overflow-y: hidden;
   margin-bottom: 30px;
 }
+main #adopciones #adopciones_galeria--row h5 {
+  text-align: center;
+  font-size: 24px;
+}
 main #adopciones #adopciones_galeria--row img {
   width: 300px;
   height: 300px;
