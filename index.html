@@ -69,13 +69,78 @@
         <hr class="separador--short--nomt">
 
         <section id="novedad">
-            <h2 id="novedad_titulo" class="col-10 col-sm-8 col-lg-6 col-xl-5 titles animate__animated animate__zoomIn">TAPADITA SOLIDARIA</h2>
-            <div class="novedad-grid-container m-3 m-md-4">
-                <article class="row mb-3 mb-md-0 mb-lg-3 justify-content-center text-center">
-                    <p class="col-7 col-sm-4 col-md-3 col-xl-2 bg-secondary text-white rounded ">¡FINALIZADO!</p>
-                </article>
+            <article class="novedad-grid-container m-3 m-md-4">
+                <h2 id="novedad_titulo" class="col-10 titles animate__animated animate__zoomIn">FERIA "DÍA DEL ANIMAL"</h2>
                 <div class="row">
-                    <article class="col-12 col-md-5 col-lg-4 align-self-center" id="novedad_img">
+                    <div class="col-12 col-md-5 col-lg-4 align-self-center" id="novedad_img">
+                        <div id="novedad_galeria" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#novedad_galeria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                              <button type="button" data-bs-target="#novedad_galeria" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                              <button type="button" data-bs-target="#novedad_galeria" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+                              <button type="button" data-bs-target="#novedad_galeria" data-bs-slide-to="3" aria-label="Imagen 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/novedad/FDA.jpg" class="d-block w-100" alt="Banner de la Feria del Día del Animal">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/novedad/FDA_B1.jpg" class="d-block w-100" alt="Banner de la Feria del Día del Animal">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/novedad/FDA_B2.jpg" class="d-block w-100" alt="Banner de la Feria del Día del Animal">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/novedad/FDA_B3.jpg" class="d-block w-100" alt="Banner de la Feria del Día del Animal">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#novedad_galeria" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#novedad_galeria" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-7 col-lg-8 align-self-center text-center text-md-start" id="novedad_info">
+                        <div class="pt-4 pb-2 pb-xl-3">
+                            <span class="text-muted novedad__fecha">26/04/2023</span>
+                        </div>
+                        <div>
+                            <p>Este <strong>sábado 29 de abril</strong> vamos a estar en la <a href="https://goo.gl/maps/Vk9DbEP2CHqT1Qf67" target="_blank" class="link">Costanera de Campana</a> participando del hermoso evento que organiza @campanagov, en donde habrá de todo...</p>
+                            <p>
+                                <ul>
+                                    <li><i class="fa-solid fa-bone"></i>Feria de tortas</li>
+                                    <li><i class="fa-solid fa-bone"></i>Juegos</li>
+                                    <li><i class="fa-solid fa-bone"></i>Caninatas</li>
+                                    <li><i class="fa-solid fa-bone"></i>Arte y biblioteca temática de mascotas</li>
+                                    <li><i class="fa-solid fa-bone"></i>Desfiles</li>
+                                    <li><i class="fa-solid fa-bone"></i>Vacunación</li>
+                                    <li><i class="fa-solid fa-bone"></i>Adopciones responsables, ¡¡¡y mucho más!!!</li>
+                                </ul>
+                            </p>
+                            <p>Aparte de tortas, llevaremos nuestras exitosas galletitas para perros, juguetes, mantitas y muchas cosas lindas más ♥</p>
+                            <p>👉Todo lo recaudado es, como siempre, para que los rescataditos puedan tener sus <em> atenciones veterinarias</em>.</p>
+                            <p>
+                                ¡Los esperamos!♥🐾
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>   
+            
+            <hr class="separador--short">
+
+            <article class="novedad-grid-container m-3 m-md-4">
+                <h2 id="novedad_titulo" class="col-10 col-sm-8 col-lg-6 col-xl-5 titles animate__animated animate__zoomIn">TAPADITA SOLIDARIA</h2>
+                <div class="row mb-3 mb-md-0 mb-lg-3 justify-content-center text-center">
+                    <p class="col-7 col-sm-4 col-md-3 col-xl-2 bg-secondary text-white rounded ">¡FINALIZADO!</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4 align-self-center" id="novedad_img">
                         <div id="novedad_carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -97,9 +162,9 @@
                                 <span class="visually-hidden">Siguiente</span>
                             </button>
                         </div>
-                    </article>
+                    </div>
     
-                    <article class="col-12 col-md-7 col-lg-8 align-self-center text-center text-md-start" id="novedad_info">
+                    <div class="col-12 col-md-7 col-lg-8 align-self-center text-center text-md-start" id="novedad_info">
                         <div class="pt-4 pb-2 pb-xl-3">
                             <span class="text-muted novedad__fecha">26/02/2023</span>
                         </div>
@@ -115,15 +180,14 @@
                                 Podés comprarlo por Mercado pago o transferencia bancaria mandando mensaje privado de Instagram.
                                 En efectivo en PC Monta (Mitre y Balcarce).
                             </p>
+                            <p>
+                                ¡Ojalá nos puedas ayudar! <br>
+                                Los rescataditos ♥
+                            </p>
                         </div>
-                        <p>
-                            ¡Ojalá nos puedas ayudar! <br>
-                            Los rescataditos ♥
-                        </p>
-                    </article>
+                    </div>
                 </div>
-                
-            </div>         
+            </article>         
         </section>
     </main>
 

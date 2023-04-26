@@ -1,18 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@400;600&family=Tilt+Warp&family=Indie+Flower&display=swap");
-main .novedad-grid-container {
+html main .titles {
+  margin-bottom: 10px;
+}
+html main .novedad-grid-container {
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
 }
-main #novedad_img img {
+html main #novedad_img img {
   width: 100%;
   border-radius: 15px;
 }
-main #novedad_info p {
+html main #novedad_info p {
   margin-bottom: 10px;
 }
-main #novedad_info p .novedad_fecha {
+html main #novedad_info p .novedad_fecha {
   color: rgb(172, 168, 168);
+}
+html main #novedad_info i {
+  color: #F27324;
+  margin-right: 5px;
 }
 
 main #sobrenosotros {
