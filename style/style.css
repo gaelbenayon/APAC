@@ -202,6 +202,7 @@ html {
   scroll-behavior: smooth;
 }
 html body {
+  overflow-x: hidden;
   font-family: "DM Sans";
   background-color: rgb(246, 242, 234);
 }

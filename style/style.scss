@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
     //GENERAL
     body {
-        // overflow-x: hidden;
+        overflow-x: hidden;
         font-family: map-get($fonts,general);
         background-color: map-get($backcolor,body);
     }
