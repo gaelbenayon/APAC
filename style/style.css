@@ -58,6 +58,10 @@ main #adopciones {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+main #adopciones h5 {
+  text-align: center;
+  font-size: 24px;
+}
 main #adopciones .anotaciones {
   display: none;
   text-transform: uppercase;
@@ -69,10 +73,6 @@ main #adopciones #adopciones_galeria--row {
   overflow-x: scroll;
   overflow-y: hidden;
   margin-bottom: 30px;
-}
-main #adopciones #adopciones_galeria--row h5 {
-  text-align: center;
-  font-size: 24px;
 }
 main #adopciones #adopciones_galeria--row img {
   width: 300px;
@@ -490,7 +490,7 @@ html footer .copyright {
   align-items: center;
   background-color: #F27324;
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   width: 100%;
   height: 25px;
 }
