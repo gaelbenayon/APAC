@@ -31,7 +31,7 @@ html {
         color: map-get($colores,enlaces);
         &:hover {
             font-weight: bold;
-            border-bottom: 2px solid map-get($colores,principal); 
+            border-bottom: 1.5px solid map-get($colores,principal); 
         }
     }
     .banner {

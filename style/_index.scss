@@ -1,24 +1,31 @@
 html {
     main {
-        .titles {margin-bottom: 10px;}
-        .novedad-grid-container {
-            padding: 20px;
-            border-radius: 20px;
-            background-color: #fff;
-        }
-        #novedad_img img {
-            width: 100%;
-            border-radius: 15px;
-        }
-        #novedad_info {
-            p {
-                margin-bottom: 10px;
-                .novedad_fecha {color: map-get($colores,novedad_fecha);}
+        #novedad {
+            .titles {
+                font-size: 30px;
+                margin-bottom: 20px;
+                color: #fff;
+                background-color: map-get($colores,principal);
             }
-            i {
-                color: map-get($colores,principal);
-                margin-right: 5px;
+            .novedad-grid-container {
+                padding: 20px;
+                border-radius: 20px;
+                background-color: #fff;
             }
-        }  
+            #novedad_img img {
+                width: 100%;
+                border-radius: 15px;
+            }
+            #novedad_info {
+                p {
+                    margin-bottom: 10px;
+                    .novedad_fecha {color: map-get($colores,novedad_fecha);}
+                }
+                i {
+                    color: map-get($colores,principal);
+                    margin-right: 5px;
+                }
+            }  
+        }
     }
 }

@@ -1,23 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@400;600&family=Tilt+Warp&family=Indie+Flower&display=swap");
-html main .titles {
-  margin-bottom: 10px;
+html main #novedad .titles {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #F27324;
 }
-html main .novedad-grid-container {
+html main #novedad .novedad-grid-container {
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
 }
-html main #novedad_img img {
+html main #novedad #novedad_img img {
   width: 100%;
   border-radius: 15px;
 }
-html main #novedad_info p {
+html main #novedad #novedad_info p {
   margin-bottom: 10px;
 }
-html main #novedad_info p .novedad_fecha {
+html main #novedad #novedad_info p .novedad_fecha {
   color: rgb(172, 168, 168);
 }
-html main #novedad_info i {
+html main #novedad #novedad_info i {
   color: #F27324;
   margin-right: 5px;
 }
@@ -104,7 +107,7 @@ main #adopciones img {
 }
 main #adopciones #adopciones_galeria--carousel {
   display: none;
-  margin: 20px 0px 20px 0px !important;
+  margin: 20px 0px 20px 0px;
 }
 main #adopciones #adopciones_galeria--carousel h5 {
   text-transform: uppercase;
@@ -126,6 +129,9 @@ main #adopciones #adopcionesInfo {
   margin: 10px;
   display: flex;
   flex-direction: column;
+}
+main #adopciones #adopcionesPaseo, main #adopciones #adopcionesCuidados {
+  text-align: center;
 }
 main #adopciones #adopcionesPaseo p, main #adopciones #adopcionesCuidados p {
   display: inline;
@@ -237,7 +243,7 @@ html .link {
 }
 html .link:hover {
   font-weight: bold;
-  border-bottom: 2px solid #F27324;
+  border-bottom: 1.5px solid #F27324;
 }
 html .banner {
   width: 70%;
@@ -510,6 +516,11 @@ html footer .copyright a:hover {
   border-bottom: 2px dashed #fff;
 }
 
+@media only screen and (min-width: 260px) and (max-width: 300px) {
+  #novedad_titulo {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 430px) {
   html header nav {
     height: 100px;
@@ -535,16 +546,6 @@ html footer .copyright a:hover {
   }
   html footer .footer_enlaces i {
     font-size: 16px;
-  }
-}
-@media only screen and (min-width: 480px) {
-  main #adopciones ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  main #adopciones #adopcionesPaseo {
-    text-align: center;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -587,7 +588,7 @@ html footer .copyright a:hover {
   html header .menuShow {
     width: 40vw;
   }
-  html main article p {
+  html main article p, html main li {
     font-size: 18px;
   }
   html main #sobrenosotros #sobrenosotros_img {
@@ -616,7 +617,7 @@ html footer .copyright a:hover {
   html .subtitles {
     font-size: 28px;
   }
-  html main article p {
+  html main article p, html main li {
     font-size: 20px;
   }
   html main #sobrenosotros #sobrenosotros_img {

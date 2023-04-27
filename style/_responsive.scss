@@ -1,3 +1,9 @@
+@media only screen and (min-width: 260px) and (max-width: 300px) {
+    #novedad_titulo {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 430px) {
     html {
         header {
@@ -36,19 +42,6 @@
                     font-size: 16px;
                 }
             }
-        }
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    main {
-        #adopciones {
-            ul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            #adopcionesPaseo {text-align: center;}
         }
     }
 }
@@ -104,7 +97,7 @@
         }
         main {
             //GENERAL
-            article p {font-size: 18px;}
+            article p, li {font-size: 18px;}
             //
             #sobrenosotros {
                 #sobrenosotros_img {
@@ -139,7 +132,7 @@
         .titles {font-size: 45px;}
         .subtitles {font-size: 28px;}
         main {
-            article p {font-size: 20px;}
+            article p, li {font-size: 20px;}
             #sobrenosotros {
                 #sobrenosotros_img {background-position-y: 75%;}
             }
