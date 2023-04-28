@@ -17,13 +17,11 @@
         }
         main {
             //GENERAL
-            article p {
-                line-height: 1.5;
-            }
-            //FIN GENERAL
+            article p {line-height: 1.5;}
+            //
             //CLASES
             .banner {font-size: 20px;}
-            //FIN CLASES
+            //
             #sobrenosotros {
                 #sobrenosotros_img {
                     background-size: 140%;
@@ -36,12 +34,8 @@
         }
         footer {
             .footer_enlaces {
-                a {
-                    font-size: 14px;
-                }
-                i {
-                    font-size: 16px;
-                }
+                a {font-size: 14px;}
+                i {font-size: 16px;}
             }
         }
     }
@@ -113,7 +107,6 @@
                 #voluntarios_img {background-position-y: 60%;}
             }
         }
-        
     }
 }
 
@@ -147,20 +140,14 @@
             }
             #veterinarias {
                 #veterinarias-grid-container {
-                    a, span {
-                        font-size: 18px;
-                    }
+                    a, span {font-size: 18px;}
                 }
             }
         }
         footer {
             .footer_enlaces {
-                a {
-                    font-size: 18px;
-                }
-                i {
-                    font-size: 20px;
-                }
+                a {font-size: 18px;}
+                i {font-size: 20px;}
             }
         }
     }
