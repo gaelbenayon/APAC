@@ -368,6 +368,9 @@ html .img_goDown i {
     color: white;
   }
 }
+html header .barra {
+  z-index: 1000;
+}
 html header nav {
   display: flex;
   position: sticky;
@@ -596,7 +599,7 @@ html footer .copyright a:hover {
     font-size: 18px;
   }
   html main #sobrenosotros #sobrenosotros_img {
-    background-position-y: 60%;
+    background-position-y: 75%;
     background-size: 115%;
   }
   html main #asociarse #asociarse_img {
@@ -623,9 +626,6 @@ html footer .copyright a:hover {
   }
   html main article p, html main li {
     font-size: 20px;
-  }
-  html main #sobrenosotros #sobrenosotros_img {
-    background-position-y: 75%;
   }
   html main #adopciones #adopciones_galeria--row img {
     width: 400px;
