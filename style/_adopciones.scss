@@ -62,9 +62,10 @@ main {
         }
         #adopcionesInfo {
             text-align: center;
-            margin: 10px;
+            margin-top: 10px;
             display: flex;
             flex-direction: column;
+            ul{list-style: circle;}
         }
         #adopcionesPaseo, #adopcionesCuidados {
             text-align: center;
