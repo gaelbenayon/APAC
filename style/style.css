@@ -368,9 +368,6 @@ html .img_goDown i {
     color: white;
   }
 }
-html header .barra {
-  z-index: 1000;
-}
 html header nav {
   display: flex;
   position: sticky;
@@ -476,6 +473,9 @@ html header .menuShow .menu_enlaces li a {
 }
 html main article p {
   font-size: 16px;
+}
+html main #error404 .link {
+  font-style: normal;
 }
 html footer .titles {
   margin-bottom: 25px;
