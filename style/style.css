@@ -214,6 +214,35 @@ main #veterinarias #veterinarias-grid-container .grid_indicadores i {
     width: 60vw;
   }
 }
+.sumate::before, .sumate::after {
+  content: "";
+  background: linear-gradient(45deg, #F27324, white);
+  border-radius: 10px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  z-index: -1;
+  background-size: 150%;
+  height: calc(100% + 6px);
+  width: calc(100% + 6px);
+  animation: sumate 3s linear infinite;
+}
+
+.sumate::after {
+  filter: blur(8px);
+}
+
+@keyframes sumate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -315,6 +344,7 @@ html .back_img {
   padding-top: 30px;
 }
 html .sumate {
+  position: relative;
   color: #fff;
   background-color: #F27324;
   text-align: center;
@@ -323,6 +353,7 @@ html .sumate {
   padding: 5px;
   border-radius: 10px;
   font-weight: bold;
+  width: 300px;
 }
 html .anotaciones {
   color: grey;

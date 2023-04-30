@@ -100,14 +100,17 @@ html {
         padding-top: 30px;
     }
     .sumate {
+        position: relative;
         color: #fff;
         background-color: map-get($colores,principal);
+        // background: linear-gradient(45deg,red,blue);
         text-align: center;
         margin: auto;
         margin-top: 20px;
         padding: 5px;
         border-radius: 10px;
         font-weight: bold;
+        width: 300px;
     }
     .anotaciones {
         color: map-get($colores,anotaciones);
