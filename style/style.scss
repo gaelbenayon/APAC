@@ -103,7 +103,6 @@ html {
         position: relative;
         color: #fff;
         background-color: map-get($colores,principal);
-        // background: linear-gradient(45deg,red,blue);
         text-align: center;
         margin: auto;
         margin-top: 20px;
@@ -111,6 +110,7 @@ html {
         border-radius: 10px;
         font-weight: bold;
         width: 300px;
+        cursor: default;
     }
     .anotaciones {
         color: map-get($colores,anotaciones);
@@ -136,13 +136,6 @@ html {
             animation-name: goDown;
             animation-iteration-count: infinite;
         }         
-        @keyframes goDown {
-            0% {color: white;}
-            25% {color: map-get($colores,principal);}
-            50% {color: white;}
-            75% {color: map-get($colores,principal);}
-            100% {color: white;}
-        }
     }
     //FIN CLASES
 

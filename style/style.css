@@ -214,22 +214,39 @@ main #veterinarias #veterinarias-grid-container .grid_indicadores i {
     width: 60vw;
   }
 }
-.sumate::before, .sumate::after {
+@keyframes goDown {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #F27324;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: #F27324;
+  }
+  100% {
+    color: white;
+  }
+}
+.sumate:hover::after, .sumate:hover::before {
   content: "";
   background: linear-gradient(45deg, #F27324, white);
   border-radius: 10px;
   position: absolute;
-  left: -3px;
-  top: -3px;
+  left: -2px;
+  top: -2px;
   z-index: -1;
   background-size: 150%;
-  height: calc(100% + 6px);
-  width: calc(100% + 6px);
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
   animation: sumate 3s linear infinite;
 }
 
 .sumate::after {
-  filter: blur(8px);
+  filter: blur(3px);
 }
 
 @keyframes sumate {
@@ -354,6 +371,7 @@ html .sumate {
   border-radius: 10px;
   font-weight: bold;
   width: 300px;
+  cursor: default;
 }
 html .anotaciones {
   color: grey;
@@ -381,23 +399,6 @@ html .img_goDown i {
   animation-duration: 3s;
   animation-name: goDown;
   animation-iteration-count: infinite;
-}
-@keyframes goDown {
-  0% {
-    color: white;
-  }
-  25% {
-    color: #F27324;
-  }
-  50% {
-    color: white;
-  }
-  75% {
-    color: #F27324;
-  }
-  100% {
-    color: white;
-  }
 }
 html header nav {
   display: flex;

@@ -13,21 +13,31 @@
     100% {width: 60vw;}
 }
 
-.sumate::before, .sumate::after {
-    content: '';
-    background: linear-gradient(45deg,map-get($colores,principal),white);
-    border-radius: 10px;
-    position: absolute;
-    left: -3px;
-    top: -3px;
-    z-index: -1;
-    background-size: 150%;
-    height: calc(100% + 6px);
-    width: calc(100% + 6px);
-    animation: sumate 3s linear infinite;
+@keyframes goDown {
+    0% {color: white;}
+    25% {color: map-get($colores,principal);}
+    50% {color: white;}
+    75% {color: map-get($colores,principal);}
+    100% {color: white;}
 }
 
-.sumate::after {filter: blur(8px);}
+.sumate:hover {
+    &::after,&::before {
+        content: '';
+        background: linear-gradient(45deg,map-get($colores,principal),white);
+        border-radius: 10px;
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        z-index: -1;
+        background-size: 150%;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        animation: sumate 3s linear infinite;
+    }
+}
+
+.sumate::after {filter: blur(3px);}
 
 @keyframes sumate {
     0% {background-position: 0 0;}
