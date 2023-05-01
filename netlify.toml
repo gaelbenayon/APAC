@@ -4,6 +4,6 @@
   status = 404
 
 [[redirects]]
-from = "/asociarse"
-to = "/html/asociarse.html"
-status = 200
+  from = "/asociarse"
+  to = "/html/asociarse.html"
+  status = 200
