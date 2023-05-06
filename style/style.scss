@@ -139,7 +139,7 @@ html {
     }
     //FIN CLASES
 
-    header{
+    header {
         nav {
             display: flex;
             position: sticky;
@@ -203,11 +203,12 @@ html {
         }
         .menuShow {
             position: fixed;
-            transition: .5s;
+            transition: .4s ease;
             height: 100vh;
             width: 100%;
             flex-direction: column;
             padding-top: 30px;
+            overflow-y: scroll;
             .menu_enlaces {
                 width: 100%;
                 display: flex;

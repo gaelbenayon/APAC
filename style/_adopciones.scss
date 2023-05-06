@@ -14,6 +14,7 @@ main {
             font-size: 16px;
             margin-bottom: 20px;
         }
+        img {border-radius: 15px;}
         #adopciones_galeria--row {
             display: none;
             overflow-x: scroll;
@@ -36,10 +37,6 @@ main {
                     font-family: map-get($fonts,galeria_nombres);
                 }
             }
-        }
-        img {
-            width: 100%;
-            border-radius: 15px;
         }
         #adopciones_galeria--carousel {
             display: none;

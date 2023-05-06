@@ -78,6 +78,9 @@ main #adopciones .anotaciones {
   font-size: 16px;
   margin-bottom: 20px;
 }
+main #adopciones img {
+  border-radius: 15px;
+}
 main #adopciones #adopciones_galeria--row {
   display: none;
   overflow-x: scroll;
@@ -100,10 +103,6 @@ main #adopciones #adopciones_galeria--row .image-container .galeria_nombres {
   top: 80%;
   color: #fff;
   font-family: "Indie Flower";
-}
-main #adopciones img {
-  width: 100%;
-  border-radius: 15px;
 }
 main #adopciones #adopciones_galeria--carousel {
   display: none;
@@ -469,11 +468,12 @@ html header nav .menu_enlaces {
 }
 html header .menuShow {
   position: fixed;
-  transition: 0.5s;
+  transition: 0.4s ease;
   height: 100vh;
   width: 100%;
   flex-direction: column;
   padding-top: 30px;
+  overflow-y: scroll;
 }
 html header .menuShow .menu_enlaces {
   width: 100%;
@@ -625,7 +625,10 @@ html footer .copyright a:hover {
 }
 @media only screen and (min-width: 768px) {
   html header .menuShow {
-    width: 40vw;
+    width: 35vw;
+  }
+  html header nav .nav_logo a span {
+    font-size: 40px;
   }
   html main article p, html main li {
     font-size: 18px;
@@ -689,11 +692,19 @@ html footer .copyright a:hover {
 }
 @media only screen and (orientation: landscape) {
   html header .menuShow {
-    width: 100vw;
+    width: 35vw;
   }
   html header .menuShow .menu_enlaces {
-    flex-direction: row;
-    justify-content: center;
+    margin-top: 10px;
+  }
+  html header .menuShow .menu_enlaces li {
+    padding: 7px;
+  }
+  html header .menuShow .menu_enlaces li a {
+    font-size: 18px;
+  }
+  html header nav .nav_logo a span {
+    font-size: 30px;
   }
   html main .img_goDown {
     display: block;

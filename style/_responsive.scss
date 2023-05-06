@@ -88,7 +88,8 @@
 @media only screen and (min-width: 768px) {
     html {
         header {
-            .menuShow {width: 40vw;}
+            .menuShow {width: 35vw;}
+            nav .nav_logo a span {font-size: 40px;}
         }
         main {
             //GENERAL
@@ -173,12 +174,16 @@
     html {
         header {
             .menuShow {
-                width: 100vw;
+                width: 35vw;
                 .menu_enlaces {
-                    flex-direction: row;
-                    justify-content: center;
+                    margin-top: 10px;
+                    li {
+                        padding: 7px;
+                        a {font-size: 18px;}
+                    }
                 }
             } 
+            nav .nav_logo a span {font-size: 30px;}
         }
         main {
             .img_goDown {display: block;}
