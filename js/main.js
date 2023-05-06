@@ -1,6 +1,6 @@
 AOS.init(); //INICIAR ANIMACIONES
 
 function menu() {
-    nav = document.getElementById('header_nav');
-    nav.classList.toggle('menuShow');
+    menuResponsive = document.getElementById('menuResponsive');
+    menuResponsive.classList.toggle('menuShow');
 }

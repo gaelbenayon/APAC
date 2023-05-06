@@ -87,10 +87,6 @@
 
 @media only screen and (min-width: 768px) {
     html {
-        header {
-            .menuShow {width: 35vw;}
-            nav .nav_logo a span {font-size: 40px;}
-        }
         main {
             //GENERAL
             article p, li {font-size: 18px;}
@@ -120,6 +116,10 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 1024px) {
+    html header #menuResponsive {display: none;}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -172,19 +172,6 @@
 
 @media only screen and (orientation: landscape) {
     html {
-        header {
-            .menuShow {
-                width: 35vw;
-                .menu_enlaces {
-                    margin-top: 10px;
-                    li {
-                        padding: 7px;
-                        a {font-size: 18px;}
-                    }
-                }
-            } 
-            nav .nav_logo a span {font-size: 30px;}
-        }
         main {
             .img_goDown {display: block;}
             .back_img {height: calc(100vh - 70px);}

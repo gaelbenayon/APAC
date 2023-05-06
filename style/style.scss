@@ -142,18 +142,14 @@ html {
     header {
         nav {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
             position: sticky;
             top: 0;
             z-index: 100;
             width: 100%;
             height: 70px;
             background-color: map-get($colores,principal);
-            .top {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-            }
             .nav_logo {
                 padding: 0px 30px;
                 a {
@@ -199,39 +195,35 @@ html {
                 padding-right: 30px;
                 cursor: pointer;
             }
-            .menu_enlaces {display: none;}
         }
+        .menuResponsive {display: none;}
         .menuShow {
-            position: fixed;
-            transition: .4s ease;
-            height: 100vh;
+            display: flex;
+            transition: all 1s ease;
+            padding: 10px;
             width: 100%;
+            background: linear-gradient(180deg,#fff 60%,map-get($backcolor,body));
             flex-direction: column;
-            padding-top: 30px;
-            overflow-y: scroll;
             .menu_enlaces {
-                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                flex-wrap: wrap;
-                margin-top: 20px;
                 text-align: center;
                 li {
-                    padding: 15px;
+                    padding: 5px;
                     transition: all 0.4s ease-out;
                     &:hover,&:active,&:focus {
                         padding: 8px;
                         margin-bottom: 10px;
                         border-radius: 10px;
-                        background-color: #fff;
-                        a {color: map-get($colores,principal);}  
+                        background-color: map-get($backcolor,nav_enlaces_hover);
+                        a {color: #fff;}  
                     }
                     a {
-                        color: map-get($colores,nav_enlaces);
+                        color: map-get($colores,principal);
                         font-family: map-get($fonts,nav_enlaces);
                         font-weight: 400;
-                        font-size: 22px;
+                        font-size: 18px;
                     }
                 }
             }

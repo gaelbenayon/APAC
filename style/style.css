@@ -401,18 +401,14 @@ html .img_goDown i {
 }
 html header nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 100;
   width: 100%;
   height: 70px;
   background-color: #F27324;
-}
-html header nav .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
 }
 html header nav .nav_logo {
   padding: 0px 30px;
@@ -463,45 +459,41 @@ html header nav #nav_menu {
   padding-right: 30px;
   cursor: pointer;
 }
-html header nav .menu_enlaces {
+html header .menuResponsive {
   display: none;
 }
 html header .menuShow {
-  position: fixed;
-  transition: 0.4s ease;
-  height: 100vh;
+  display: flex;
+  transition: all 1s ease;
+  padding: 10px;
   width: 100%;
+  background: linear-gradient(180deg, #fff 60%, rgb(246, 242, 234));
   flex-direction: column;
-  padding-top: 30px;
-  overflow-y: scroll;
 }
 html header .menuShow .menu_enlaces {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
   text-align: center;
 }
 html header .menuShow .menu_enlaces li {
-  padding: 15px;
+  padding: 5px;
   transition: all 0.4s ease-out;
 }
 html header .menuShow .menu_enlaces li:hover, html header .menuShow .menu_enlaces li:active, html header .menuShow .menu_enlaces li:focus {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: rgb(255, 69, 0);
 }
 html header .menuShow .menu_enlaces li:hover a, html header .menuShow .menu_enlaces li:active a, html header .menuShow .menu_enlaces li:focus a {
-  color: #F27324;
+  color: #fff;
 }
 html header .menuShow .menu_enlaces li a {
-  color: #fff;
+  color: #F27324;
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
 }
 html main article p {
   font-size: 16px;
@@ -624,12 +616,6 @@ html footer .copyright a:hover {
   }
 }
 @media only screen and (min-width: 768px) {
-  html header .menuShow {
-    width: 35vw;
-  }
-  html header nav .nav_logo a span {
-    font-size: 40px;
-  }
   html main article p, html main li {
     font-size: 18px;
   }
@@ -650,6 +636,11 @@ html footer .copyright a:hover {
   }
   html header #header_nav #nav_menu {
     display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html header #menuResponsive {
+    display: none;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -691,21 +682,6 @@ html footer .copyright a:hover {
   }
 }
 @media only screen and (orientation: landscape) {
-  html header .menuShow {
-    width: 35vw;
-  }
-  html header .menuShow .menu_enlaces {
-    margin-top: 10px;
-  }
-  html header .menuShow .menu_enlaces li {
-    padding: 7px;
-  }
-  html header .menuShow .menu_enlaces li a {
-    font-size: 18px;
-  }
-  html header nav .nav_logo a span {
-    font-size: 30px;
-  }
   html main .img_goDown {
     display: block;
   }
