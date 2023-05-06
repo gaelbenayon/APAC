@@ -464,11 +464,11 @@ html header .menuResponsive {
 }
 html header .menuShow {
   display: flex;
-  transition: all 1s ease;
   padding: 10px;
   width: 100%;
-  background: linear-gradient(180deg, #fff 60%, rgb(246, 242, 234));
+  background: linear-gradient(180deg, #fff 90%, rgb(246, 242, 234));
   flex-direction: column;
+  transition: all 0.4s ease;
 }
 html header .menuShow .menu_enlaces {
   display: flex;
