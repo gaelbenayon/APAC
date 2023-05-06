@@ -247,6 +247,20 @@ html {
 
     footer {
         .titles {margin-bottom: 25px;}
+        #formulario {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 20px;
+            input {
+                border-radius: 5px;
+                margin: 5px;
+                border: 2px solid map-get($colores,principal);
+                padding: 5px;
+            }
+        }
         .footer_enlaces {
             margin: auto;
             margin-bottom: 30px;
