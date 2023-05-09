@@ -4,7 +4,3 @@
 /adoptar /adopciones 301
 /voluntarios /html/voluntarios.html 200
 /veterinarias /html/veterinarias.html 200
-#REDIRECCIONES IDs
-/sobreapac#info https://apacampana.netlify.app/sobreapac#sobrenosotros_info 200
-/asociarse#info https://apacampana.netlify.app/asociarse#asociarse_info 200
-/voluntarios#info https://apacampana.netlify.app/voluntarios#voluntarios_requisitos 200

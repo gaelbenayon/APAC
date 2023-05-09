@@ -2,3 +2,18 @@
   from = "/*"
   to = "/404/404.html"
   status = 404
+
+[[redirects]]
+  from = "/sobreapac#info"
+  to = "/sobreapac#sobrenosotros_info"
+  status = 200
+
+[[redirects]]
+  from = "/asociarse#info"
+  to = "/asociarse#asociarse_info"
+  status = 200
+
+[[redirects]]
+  from = "/voluntarios#info"
+  to = "/voluntarios#voluntarios_requisitos"
+  status = 200
