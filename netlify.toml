@@ -5,15 +5,15 @@
 
 [[redirects]]
   from = "/sobreapac#info"
-  to = "/sobreapac#sobrenosotros_info"
+  to = "/html/sobreapac.html#sobrenosotros_info"
   status = 200
 
 [[redirects]]
   from = "/asociarse#info"
-  to = "/asociarse#asociarse_info"
+  to = "/html/asociarse.html#asociarse_info"
   status = 200
 
 [[redirects]]
   from = "/voluntarios#info"
-  to = "/voluntarios#voluntarios_requisitos"
+  to = "/html/voluntarios.html#voluntarios_requisitos"
   status = 200
