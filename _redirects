@@ -6,6 +6,6 @@
 /veterinarias /html/veterinarias.html 200
 
 #REDIRECCIONES IDs
-/sobreapac/info /html/sobreapac.html#sobrenosotros_info 200
-/asociarse/info /html/asociarse.html#asociarse_info 200
-/voluntarios/info /html/voluntarios.html#voluntarios_requisitos 200
+sobreapac/info /html/sobreapac.html#sobrenosotros_info 200
+asociarse/info /html/asociarse.html#asociarse_info 200
+voluntarios/info /html/voluntarios.html#voluntarios_requisitos 200
